@@ -11,8 +11,52 @@
 <link rel="canonical" href="https://www.torontocupcake.com/cupcakes.html" />
 <link href="css/cupcakes.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet" />
-<script defer src="js/gtag.js"></script>
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-22531588-1"></script>
+<script src="logging.js"></script>
+<script>
+    let searchParams = {};
+
+    if ('URLSearchParams' in window) {
+        searchParams = new URLSearchParams(
+        window.location.search.substring(1),
+        );
+    }
+
+    let logNow = true;
+    let isScrolling = null;
+    window.addEventListener(
+      'scroll',
+      function (e) {
+
+        if(logNow) {
+            // console.log("startLogged")
+            loggingjs.logEvent(null, 'scrollStartEvent', {
+                eventName: 'scrollStart',
+                info: {
+                    input: searchParams.get('input'),
+                    unique_id: searchParams.get('unique_id'),
+                    interface: 'new',
+                    },
+            });
+        }
+        logNow = false
+        
+        clearTimeout(isScrolling);
+        isScrolling = setTimeout(function () {
+            logNow = true;
+            // console.log("stopLogged")
+            loggingjs.logEvent(null, 'scrollStopEvent', {
+                eventName: 'scrollStop',
+                info: {
+                input: searchParams.get('input'),
+                unique_id: searchParams.get('unique_id'),
+                interface: 'new',
+            },
+            });
+        }, 500);
+      },
+      false,
+    );
+  </script>
 </head>
 <body id="top" class="w3-container w3-TOCCpfont" style="margin-right:3%;margin-left:3%;">
 
