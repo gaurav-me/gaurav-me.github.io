@@ -243,7 +243,6 @@ ul.w3-ul li:last-child {
 .w3-sidenav .w3-dropdown-click:hover,
 .w3-sidenav .w3-dropdown-hover:first-child,
 .w3-sidenav .w3-dropdown-hover:hover {
-    background-color: #ccc;
     color: #000
 }
 
@@ -264,8 +263,6 @@ ul.w3-ul li:last-child {
 
 .w3-dropdown-click,
 .w3-dropdown-hover {
-    position: relative;
-    display: inline-block;
     cursor: pointer
 }
 
@@ -277,16 +274,13 @@ ul.w3-ul li:last-child {
 .w3-dropdown-content {
     cursor: auto;
     color: #000;
-    background-color: #fff;
     display: none;
-    position: absolute;
     min-width: 160px;
     margin: 0;
     padding: 0
 }
 
 .w3-dropdown-content a {
-    padding: 6px 16px;
     display: block
 }
 
@@ -383,7 +377,7 @@ ul.w3-ul li:last-child {
 }
 
 .w3-round-large {
-    border-radius: 8px!important
+    border-radius: 8px!important;
 }
 
 .w3-round-xlarge {
@@ -536,10 +530,6 @@ ul.w3-ul li:last-child {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
     }
-}
-
-.w3-container {
-    padding: .01em 16px
 }
 
 .w3-code {
@@ -900,3 +890,56 @@ ul.w3-ul li:last-child {
   height: 10px;
   width: 10px;
 }
+
+.icon-spacing {
+    padding: .01em 16px;
+}
+
+.custom-sidenav{
+    padding-top: 45px;
+}
+
+.custom-sidenav .w3-text-white{
+    padding: 0.85em;
+}
+
+.cupcakes-bold {
+    font-weight: bold;
+}
+
+.custom-dropdown {
+    background-color: #f6a6c1;
+    box-shadow: none !important;
+    margin-left: 1.5em;
+    padding: 0;
+}
+
+.custom-header {
+    padding: 0 16px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 900000;
+}
+
+.custom-para{
+    margin:auto;
+}
+
+.custom-main-area {
+    margin-top: 65px;
+    margin-left: 200px;
+}
+
+.custom-footer {
+    margin-left: 200px;
+    text-align: center;
+}
+
+.custom-img {
+    padding: 10px 0;
+}
+
