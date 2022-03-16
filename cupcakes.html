@@ -37,9 +37,10 @@
                     interface: 'new',
                     },
             });
+            logNow = false
         }
-        logNow = false
-        
+
+
         clearTimeout(isScrolling);
         isScrolling = setTimeout(function () {
             logNow = true;
@@ -88,11 +89,11 @@
 
 <div class="content-wrapper">
     <nav class="w3-sidenav w3-theme-l3 w3-TOCCheaderFont w3-card-2 w3-animate-right custom-catbar" id="TOCCSidenav">
-        <a class="w3-text-white" href="cupcakes.html#Holidays">Chocolate</a>
-        <a class="w3-text-white" href="cupcakes.html#Holidays">Vanilla</a>
-        <a class="w3-text-white" href="cupcakes.html#Holidays">Red Velvet</a>
+        <a class="w3-text-white" href="cupcakes.html#Chocolate-Peanut-Butter-ret">Chocolate</a>
+        <a class="w3-text-white" href="cupcakes.html#Lemon-ret">Vanilla</a>
+        <a class="w3-text-white" href="cupcakes.html#Red-Velvet-ret">Red Velvet</a>
         <a class="w3-text-white" href="cupcakes.html#Holidays">Holidays</a>
-        <a class="w3-text-white" href="cupcakes.html#Holidays">Special Events and Festivals</a>
+        <a class="w3-text-white" href="cupcakes.html#Special-Events">Special Events and Festivals</a>
         <a class="w3-text-white" href="cupcakes.html#Custom">Custom</a>
     </nav>
 
@@ -361,182 +362,6 @@
 </div>
 
 <div class="w3-row">
-<a id="Red-Velvet-ret"></a>
-<div class="w3-row">
-    <div class="w3-col w3-center w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/redvelvet.webp" title="Red Velvet" alt="Toronto Cupcakes Red Velvet cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Red-Velvet').style.display='flex'">
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Red Velvet">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Red-Velvet-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-    <p>Red Velvet</br>cupcake</p>
-    <span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Red-Velvet" class="w3-modal w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4 w3-round-large" >
-                <div class="w3-container w3-center w3-padding-16">
-                <h4 class="w3-container  w3-text-theme">Red Velvet</h4>
-                <img src="images/cupcakes_flavours/redvelvet.webp" title="Red Velvet" alt="Toronto Cupcakes Red Velvet cupcake" class="w3-center" style="width:200px">
-                <img src="images/cupcakes_flavours/redvelvettop.webp" title="Red Velvet" alt="Toronto Cupcakes Red Velvet cupcake top view" class="w3-center" style="width:200px">
-                <p>Classic US southern red velvet cupcake with a vanilla cream cheese frosting topped with red and white chocolate curls</p><p class="w3-small ">Touch or click anywhere to close</p>
-    </div></div></div></div>
-
-<a id="Vanilla-Coconut-ret"></a>
-    <div class="w3-col  w3-center w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/vanillacoconut.webp" title="Vanilla Coconut" alt="Toronto Cupcakes Vanilla Coconut cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Coconut').style.display='flex'">
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Vanilla Coconut">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Coconut-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-    <p>Vanilla Coconut</br> cupcake</p>
-    <span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-  <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Vanilla-Coconut" class="w3-modal w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4" >
-                <div class="w3-container w3-center w3-padding-16">
-                <h4 class="w3-container  w3-text-theme">Vanilla Coconut</h4>
-                <img src="images/cupcakes_flavours/vanillacoconut.webp" title="Vanilla Coconut" alt="Toronto Cupcakes Vanilla Coconut cupcake" class="w3-center" style="width:200px">
-                <img src="images/cupcakes_flavours/vanillacoconuttop.webp" title="Vanilla Coconut top view" alt="Toronto Cupcakes Vanilla Coconut cupcake top view" class="w3-center" style="width:200px">                
-                <p>Vanilla cupcake with vanilla frosting topped with flaked coconut</p><p class="w3-small ">Touch or click anywhere to close</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<a id="Vanilla-Vanilla-ret"></a>
-    <div class="w3-col w3-center w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/vanillavanilla.webp" title="Vanilla Vanilla" alt="Toronto Cupcakes Vanilla Vanilla cupcake" class=" w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Vanilla').style.display='flex'">
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Vanilla Vanilla">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Vanilla-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-    <p>Vanilla Vanilla</br>cupcake</p>
-<span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Vanilla-Vanilla" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4" >
-                <div class="w3-container w3-center w3-padding-16">
-                <h4 class="w3-container  w3-text-theme">Vanilla Vanilla</h4>
-                <img src="images/cupcakes_flavours/vanillavanilla.webp" title="Vanilla Vanilla" alt="Toronto Cupcakes Vanilla Vanilla cupcake" class="w3-center" style="width:200px">
-                <img src="images/cupcakes_flavours/vanillavanillatop.webp" title="Vanilla Vanilla" alt="Toronto Cupcakes Vanilla Vanilla cupcake" class="w3-center" style="width:200px">
-                <p>Vanilla cupcake topped with vanilla frosting and a hand crafted fondant flower</p><p class="w3-small ">Touch or click anywhere to close</p>
-    </div></div></div></div>
-<a id="Vanilla-Chocolate-ret"></a>
-    <div class="w3-col w3-center w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/vanillachocolate.webp" title="Vanilla Chocolate" alt="Toronto Cupcakes Vanilla Chocolate cupcake" class="w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Chocolate').style.display='flex'">
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Vanilla Chocolate">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Chocolate-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-    <p>Vanilla Chocolate</br>cupcake</p>
-<span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Vanilla-Chocolate" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4" >
-                <div class="w3-container w3-padding-16">
-                <h4 class="w3-container w3-text-theme">Vanilla Chocolate</h4>
-                <img src="images/cupcakes_flavours/vanillachocolate.webp" title="Vanilla Chocolate" alt="Toronto Cupcakes Vanilla Chocolate cupcake" style="width:200px">
-                <img src="images/cupcakes_flavours/vanillachocolatetop.webp" title="Vanilla Chocolate top view" alt="Toronto Cupcakes Vanilla Chocolate cupcake top view" style="width:200px">                
-                <p>Vanilla cupcake topped with chocolate frosting and a tri-colour Callebaut chocolate ball</p><p class="w3-small ">Touch or click anywhere to close</p>
-    </div></div></div></div>
-<a id="Vanilla-Chocolate-Ganache-ret"></a>
-    <div class="w3-col w3-center w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/vanillachocolateganache.webp" title="Vanilla Chocolate Ganache" alt="Toronto Cupcakes Vanilla Chocolate Ganache cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Chocolate-Ganache').style.display='flex'">
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Vanilla Chocolate Ganache">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Chocolate-Ganache-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-    <p>Vanilla Chocolate</br>Ganche cupcake</p>
-<span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Vanilla-Chocolate-Ganache" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4" >
-                <div class="w3-container w3-padding-16">
-                <h4 class="w3-container  w3-text-theme">Vanilla Chocolate Ganache</h4>
-                <img src="images/cupcakes_flavours/vanillachocolateganache.webp" title="Vanilla Chocolate Ganache" alt="Toronto Cupcakes Vanilla Chocolate Ganache cupcake" class="w3-center" style="width:200px">
-                <img src="images/cupcakes_flavours/vanillachocolateganachetop.webp" title="Vanilla Chocolate Ganache top view" alt="Toronto Cupcakes Vanilla Chocolate Ganache cupcake top view" class="w3-center" style="width:200px">                
-                <p>Vanilla cupcake , topped with dark chocolate ganache and a chocolate wafer</p><p class="w3-small ">Touch or click anywhere to close</p>
-    </div></div></div></div>
-
-<a id="Vanilla-Caramel-ret"></a>
-    <div class="w3-col w3-center w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/vanillacarmel.webp" title="Vanilla Caramel" alt="Toronto Cupcakes Vanilla Caramel cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Caramel').style.display='flex'">
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Vanilla Caramel">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Caramel-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-    <p>Vanilla Carmel</br>cupcake</p>
-    <span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Vanilla-Caramel" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4" >
-                <div class="w3-container">
-                <h4 class="w3-container w3-text-theme">Vanilla Caramel</h4>
-                <img src="images/cupcakes_flavours/vanillacarmel.webp" title="Vanilla Caramel" alt="Toronto Cupcakes Vanilla Caramel cupcake"  style="width:200px">
-                <img src="images/cupcakes_flavours/vanillacarmeltop.webp" title="Vanilla Caramel" alt="Toronto Cupcakes Vanilla Caramel cupcake"  style="width:200px">
-                <p>Vanilla cupcake filled with creamy Dulce de leche filling, covered with vanilla icing and topped with carmel crisp pearls</p><p class="w3-small ">Touch or click anywhere to close</p>
-    </div></div></div></div>
-
-</div>
 
 <a id="Chocolate-Caramel-II-ret"></a>
 <div class="w3-row">
@@ -566,19 +391,17 @@
                 <img src="images/cupcakes_flavours/chocolatecarmel2top.webp" title="Chocolate Caramel II top view" alt="Toronto Cupcakes Chocolate Caramel II cupcake top view" class="w3-center" style="width:200px">
                 <p>Chocolate cupcake topped with carmel infused icing and a piece of our own in-bakery made chocolate covered brittle</p><p class="w3-small ">Touch or click anywhere to close</p>
     </div></div></div></div>
-                                                                                                         
-<a id="Lemon-ret"></a>
-    <div class="w3-col w3-center w3-container m6 l2">
+<a id="Chocolate-Mocha-ret"></a>
+    <div class="w3-col w3-container m6 l2">
     <hr>
-    <img src="images/cupcakes_flavours/lemon.webp" title="Lemon" alt="Toronto Cupcakes Lemon cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Lemon').style.display='flex'">
+    <img src="images/cupcakes_flavours/ChocolateMocha.jpg" title="Chocolate Mocha" alt="Toronto Cupcakes Chocolate Mocha cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Chocolate-Mocha').style.display='flex'"><br/><br/>
     <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
     <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Lemon">
+    <input type="hidden" name="name" value="Chocolate Mocha">
     <input type="hidden" name="price" value="3.75">
     <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Lemon-ret">
+    <input type="hidden" name="page" value="cupcakes.html#Chocolate-Mocha-ret">
     <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-<p>Vanilla Lemon</br>cupcake</p>
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
@@ -586,15 +409,20 @@
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     </form>
     </div>
-    <div id="Lemon" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
+    <div id="Chocolate-Mocha" class="w3-modal w3-transparent" onclick="this.style.display='none'">
         <div class="w3-modal-content w3-quarter w3-round-large">
             <div class="w3-card-4" >
                 <div class="w3-container w3-padding-16">
-                <h4 class="w3-container  w3-text-theme">Lemon</h4>
-                <img src="images/cupcakes_flavours/lemon.webp" title="Lemon" alt="Toronto Cupcakes Lemon cupcake" class=" w3-center" style="width:200px">
-                <img src="images/cupcakes_flavours/lemontop.webp" title="Lemon" alt="Toronto Cupcakes Lemon cupcake top view" class="w3-center" style="width:200px">                
-                <p>Vanilla cupcake filled with lemon custard topped with cream cheese frosting and our own in-bakery made jelly lemon slice</p><p class="w3-small ">Touch or click anywhere to close</p>
-    </div></div></div></div>
+                <h5>Chocolate Mocha</h5>
+                <br/>
+                <br/>
+                <img src="images/cupcakes_flavours/ChocolateMocha.jpg" title="Chocolate Mocha" alt="Toronto Cupcakes Chocolate Mocha cupcake" class="w3-center" style="width:200px">
+                <p>
+        <br/>Chocolate cupcake with mocha frosting, topped with a tri-colour Callebaut chocolate ball.<br/></p><br/><p class="w3-small ">Touch or click anywhere to close</p>
+                </div>
+            </div>
+        </div>
+    </div>                                                                                                         
 <a id="Chocolate-Toffee-ret"></a>
     <div class="w3-col w3-center w3-container m6 l2">
     <hr>
@@ -713,36 +541,7 @@
 
 </div>
 
-<a id="Red-Velvet-Fudge-ret"></a>
 <div class="w3-row">
-    <div class="w3-col w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/redvelvetfudge.jpg" title="Red Velvet Fudge" alt="Toronto Cupcakes Red Velvet Fudge cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Red-Velvet-Fudge').style.display='flex'"><br/><br/>
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Red Velvet Fudge">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Red-Velvet-Fudge-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-<span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Red-Velvet-Fudge" class="w3-modal w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4" >
-                <div class="w3-container w3-padding-16">
-                <h4 class="w3-container w3-center w3-text-theme">Red Velvet Fudge</h4>
-                <br/>
-                <br/>
-                <img src="images/cupcakes_flavours/redvelvetfudge.jpg" title="Red Velvet Fudge" alt="Toronto Cupcakes Red Velvet Fudge cupcake" class="w3-center" style="width:200px">
-                <p>
-        <br/>Classic US southern red velvet cupcake, chocolate ganache filling, topped with vanilla frosting and french cut chocolate sprinkles.<br/></p><br/><p class="w3-small ">Touch or click anywhere to close</p>
-    </div></div></div></div>
 <a id="Chocolate-Chocolate-Ganache-ret"></a>
     <div class="w3-col w3-center w3-container m6 l2">
     <hr>
@@ -802,16 +601,249 @@
             </div>
         </div>
     </div>
-<a id="Chocolate-Mocha-ret"></a>
-    <div class="w3-col w3-container m6 l2">
+<a id="Lemon-ret"></a>
+    <div class="w3-col w3-center w3-container m6 l2">
     <hr>
-    <img src="images/cupcakes_flavours/ChocolateMocha.jpg" title="Chocolate Mocha" alt="Toronto Cupcakes Chocolate Mocha cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Chocolate-Mocha').style.display='flex'"><br/><br/>
+    <img src="images/cupcakes_flavours/lemon.webp" title="Lemon" alt="Toronto Cupcakes Lemon cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Lemon').style.display='flex'">
     <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
     <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Chocolate Mocha">
+    <input type="hidden" name="name" value="Lemon">
     <input type="hidden" name="price" value="3.75">
     <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Chocolate-Mocha-ret">
+    <input type="hidden" name="page" value="cupcakes.html#Lemon-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+<p>Vanilla Lemon</br>cupcake</p>
+<span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
+<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Lemon" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4" >
+                <div class="w3-container w3-padding-16">
+                <h4 class="w3-container  w3-text-theme">Lemon</h4>
+                <img src="images/cupcakes_flavours/lemon.webp" title="Lemon" alt="Toronto Cupcakes Lemon cupcake" class=" w3-center" style="width:200px">
+                <img src="images/cupcakes_flavours/lemontop.webp" title="Lemon" alt="Toronto Cupcakes Lemon cupcake top view" class="w3-center" style="width:200px">                
+                <p>Vanilla cupcake filled with lemon custard topped with cream cheese frosting and our own in-bakery made jelly lemon slice</p><p class="w3-small ">Touch or click anywhere to close</p>
+    </div></div></div></div>
+<a id="Vanilla-Chocolate-Ganache-ret"></a>
+    <div class="w3-col w3-center w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/vanillachocolateganache.webp" title="Vanilla Chocolate Ganache" alt="Toronto Cupcakes Vanilla Chocolate Ganache cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Chocolate-Ganache').style.display='flex'">
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Vanilla Chocolate Ganache">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Chocolate-Ganache-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+    <p>Vanilla Chocolate</br>Ganche cupcake</p>
+<span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Vanilla-Chocolate-Ganache" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4" >
+                <div class="w3-container w3-padding-16">
+                <h4 class="w3-container  w3-text-theme">Vanilla Chocolate Ganache</h4>
+                <img src="images/cupcakes_flavours/vanillachocolateganache.webp" title="Vanilla Chocolate Ganache" alt="Toronto Cupcakes Vanilla Chocolate Ganache cupcake" class="w3-center" style="width:200px">
+                <img src="images/cupcakes_flavours/vanillachocolateganachetop.webp" title="Vanilla Chocolate Ganache top view" alt="Toronto Cupcakes Vanilla Chocolate Ganache cupcake top view" class="w3-center" style="width:200px">                
+                <p>Vanilla cupcake , topped with dark chocolate ganache and a chocolate wafer</p><p class="w3-small ">Touch or click anywhere to close</p>
+    </div></div></div></div>
+<a id="Vanilla-Caramel-ret"></a>
+    <div class="w3-col w3-center w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/vanillacarmel.webp" title="Vanilla Caramel" alt="Toronto Cupcakes Vanilla Caramel cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Caramel').style.display='flex'">
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Vanilla Caramel">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Caramel-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+    <p>Vanilla Carmel</br>cupcake</p>
+    <span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
+<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Vanilla-Caramel" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4" >
+                <div class="w3-container">
+                <h4 class="w3-container w3-text-theme">Vanilla Caramel</h4>
+                <img src="images/cupcakes_flavours/vanillacarmel.webp" title="Vanilla Caramel" alt="Toronto Cupcakes Vanilla Caramel cupcake"  style="width:200px">
+                <img src="images/cupcakes_flavours/vanillacarmeltop.webp" title="Vanilla Caramel" alt="Toronto Cupcakes Vanilla Caramel cupcake"  style="width:200px">
+                <p>Vanilla cupcake filled with creamy Dulce de leche filling, covered with vanilla icing and topped with carmel crisp pearls</p><p class="w3-small ">Touch or click anywhere to close</p>
+    </div></div></div></div>
+<a id="Vanilla-Strawberry-ret"></a>
+    <div class="w3-col w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/VanillaStrawberry.jpg" title="Vanilla Strawberry" alt="Toronto Cupcakes Vanilla Strawberry cupcake" class="w3-center w3-margin-right w3-round-large w3-hover-shadow " width="150" height="175"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Strawberry').style.display='flex'"><br><br>
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Vanilla Strawberry">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Strawberry-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+<span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
+<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Vanilla-Strawberry" class="w3-modal w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4" >
+                <div class="w3-container w3-padding-16">
+                <h5>Vanilla Strawberry</h5>
+                <br/>
+                <br/>
+                <img src="images/cupcakes_flavours/VanillaStrawberry.jpg" title="Vanilla Strawberry" alt="Toronto Cupcakes Vanilla Strawberry cupcake" class="w3-center" style="width:200px">
+                <p>
+        <br/>Vanilla  cupcake , topped with Strawberry frosting and a strawberry jelly bean. <br/></p><br/><p class="w3-small">Touch or click anywhere to close</p>
+    </div></div></div></div>
+
+</div>
+
+<div class="w3-row">
+
+<a id="Vanilla-Coconut-ret"></a>
+    <div class="w3-col  w3-center w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/vanillacoconut.webp" title="Vanilla Coconut" alt="Toronto Cupcakes Vanilla Coconut cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Coconut').style.display='flex'">
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Vanilla Coconut">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Coconut-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+    <p>Vanilla Coconut</br> cupcake</p>
+    <span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+  <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
+    <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Vanilla-Coconut" class="w3-modal w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4" >
+                <div class="w3-container w3-center w3-padding-16">
+                <h4 class="w3-container  w3-text-theme">Vanilla Coconut</h4>
+                <img src="images/cupcakes_flavours/vanillacoconut.webp" title="Vanilla Coconut" alt="Toronto Cupcakes Vanilla Coconut cupcake" class="w3-center" style="width:200px">
+                <img src="images/cupcakes_flavours/vanillacoconuttop.webp" title="Vanilla Coconut top view" alt="Toronto Cupcakes Vanilla Coconut cupcake top view" class="w3-center" style="width:200px">                
+                <p>Vanilla cupcake with vanilla frosting topped with flaked coconut</p><p class="w3-small ">Touch or click anywhere to close</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<a id="Vanilla-Vanilla-ret"></a>
+    <div class="w3-col w3-center w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/vanillavanilla.webp" title="Vanilla Vanilla" alt="Toronto Cupcakes Vanilla Vanilla cupcake" class=" w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Vanilla').style.display='flex'">
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Vanilla Vanilla">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Vanilla-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+    <p>Vanilla Vanilla</br>cupcake</p>
+<span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
+<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Vanilla-Vanilla" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4" >
+                <div class="w3-container w3-center w3-padding-16">
+                <h4 class="w3-container  w3-text-theme">Vanilla Vanilla</h4>
+                <img src="images/cupcakes_flavours/vanillavanilla.webp" title="Vanilla Vanilla" alt="Toronto Cupcakes Vanilla Vanilla cupcake" class="w3-center" style="width:200px">
+                <img src="images/cupcakes_flavours/vanillavanillatop.webp" title="Vanilla Vanilla" alt="Toronto Cupcakes Vanilla Vanilla cupcake" class="w3-center" style="width:200px">
+                <p>Vanilla cupcake topped with vanilla frosting and a hand crafted fondant flower</p><p class="w3-small ">Touch or click anywhere to close</p>
+    </div></div></div></div>
+<a id="Vanilla-Chocolate-ret"></a>
+    <div class="w3-col w3-center w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/vanillachocolate.webp" title="Vanilla Chocolate" alt="Toronto Cupcakes Vanilla Chocolate cupcake" class="w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Chocolate').style.display='flex'">
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Vanilla Chocolate">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Chocolate-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+    <p>Vanilla Chocolate</br>cupcake</p>
+<span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
+<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Vanilla-Chocolate" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4" >
+                <div class="w3-container w3-padding-16">
+                <h4 class="w3-container w3-text-theme">Vanilla Chocolate</h4>
+                <img src="images/cupcakes_flavours/vanillachocolate.webp" title="Vanilla Chocolate" alt="Toronto Cupcakes Vanilla Chocolate cupcake" style="width:200px">
+                <img src="images/cupcakes_flavours/vanillachocolatetop.webp" title="Vanilla Chocolate top view" alt="Toronto Cupcakes Vanilla Chocolate cupcake top view" style="width:200px">                
+                <p>Vanilla cupcake topped with chocolate frosting and a tri-colour Callebaut chocolate ball</p><p class="w3-small ">Touch or click anywhere to close</p>
+    </div></div></div></div>
+<a id="Red-Velvet-ret"></a>
+    <div class="w3-col w3-center w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/redvelvet.webp" title="Red Velvet" alt="Toronto Cupcakes Red Velvet cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Red-Velvet').style.display='flex'">
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Red Velvet">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Red-Velvet-ret">
+    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
+    <p>Red Velvet</br>cupcake</p>
+    <span class="w3-small">QTY</span>
+    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
+    <input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
+    </form>
+    </div>
+    <div id="Red-Velvet" class="w3-modal w3-transparent" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-quarter w3-round-large">
+            <div class="w3-card-4 w3-round-large" >
+                <div class="w3-container w3-center w3-padding-16">
+                <h4 class="w3-container  w3-text-theme">Red Velvet</h4>
+                <img src="images/cupcakes_flavours/redvelvet.webp" title="Red Velvet" alt="Toronto Cupcakes Red Velvet cupcake" class="w3-center" style="width:200px">
+                <img src="images/cupcakes_flavours/redvelvettop.webp" title="Red Velvet" alt="Toronto Cupcakes Red Velvet cupcake top view" class="w3-center" style="width:200px">
+                <p>Classic US southern red velvet cupcake with a vanilla cream cheese frosting topped with red and white chocolate curls</p><p class="w3-small ">Touch or click anywhere to close</p>
+    </div></div></div></div>
+<a id="Red-Velvet-Fudge-ret"></a>
+    <div class="w3-col w3-container m6 l2">
+    <hr>
+    <img src="images/cupcakes_flavours/redvelvetfudge.jpg" title="Red Velvet Fudge" alt="Toronto Cupcakes Red Velvet Fudge cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Red-Velvet-Fudge').style.display='flex'"><br/><br/>
+    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
+    <input type="hidden" name="group" value="Cupcakes">
+    <input type="hidden" name="name" value="Red Velvet Fudge">
+    <input type="hidden" name="price" value="3.75">
+    <input type="hidden" name="shipping" value="0">
+    <input type="hidden" name="page" value="cupcakes.html#Red-Velvet-Fudge-ret">
     <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
@@ -820,20 +852,17 @@
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     </form>
     </div>
-    <div id="Chocolate-Mocha" class="w3-modal w3-transparent" onclick="this.style.display='none'">
+    <div id="Red-Velvet-Fudge" class="w3-modal w3-transparent" onclick="this.style.display='none'">
         <div class="w3-modal-content w3-quarter w3-round-large">
             <div class="w3-card-4" >
                 <div class="w3-container w3-padding-16">
-                <h5>Chocolate Mocha</h5>
+                <h4 class="w3-container w3-center w3-text-theme">Red Velvet Fudge</h4>
                 <br/>
                 <br/>
-                <img src="images/cupcakes_flavours/ChocolateMocha.jpg" title="Chocolate Mocha" alt="Toronto Cupcakes Chocolate Mocha cupcake" class="w3-center" style="width:200px">
+                <img src="images/cupcakes_flavours/redvelvetfudge.jpg" title="Red Velvet Fudge" alt="Toronto Cupcakes Red Velvet Fudge cupcake" class="w3-center" style="width:200px">
                 <p>
-        <br/>Chocolate cupcake with mocha frosting, topped with a tri-colour Callebaut chocolate ball.<br/></p><br/><p class="w3-small ">Touch or click anywhere to close</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        <br/>Classic US southern red velvet cupcake, chocolate ganache filling, topped with vanilla frosting and french cut chocolate sprinkles.<br/></p><br/><p class="w3-small ">Touch or click anywhere to close</p>
+    </div></div></div></div>
 <a id="Red-Velvet-Raspberry-ret"></a>
     <div class="w3-col w3-container m6 l2">
     <hr>
@@ -866,37 +895,9 @@
             </div>
         </div>
     </div>
-<a id="Vanilla-Strawberry-ret"></a>
-    <div class="w3-col w3-container m6 l2">
-    <hr>
-    <img src="images/cupcakes_flavours/VanillaStrawberry.jpg" title="Vanilla Strawberry" alt="Toronto Cupcakes Vanilla Strawberry cupcake" class="w3-center w3-margin-right w3-round-large w3-hover-shadow " width="150" height="175"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Strawberry').style.display='flex'"><br><br>
-    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
-    <input type="hidden" name="group" value="Cupcakes">
-    <input type="hidden" name="name" value="Vanilla Strawberry">
-    <input type="hidden" name="price" value="3.75">
-    <input type="hidden" name="shipping" value="0">
-    <input type="hidden" name="page" value="cupcakes.html#Vanilla-Strawberry-ret">
-    <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
-<span class="w3-small">QTY</span>
-    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-    <a class="w3-onclick w3-right" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-    </form>
-    </div>
-    <div id="Vanilla-Strawberry" class="w3-modal w3-transparent" onclick="this.style.display='none'">
-        <div class="w3-modal-content w3-quarter w3-round-large">
-            <div class="w3-card-4" >
-                <div class="w3-container w3-padding-16">
-                <h5>Vanilla Strawberry</h5>
-                <br/>
-                <br/>
-                <img src="images/cupcakes_flavours/VanillaStrawberry.jpg" title="Vanilla Strawberry" alt="Toronto Cupcakes Vanilla Strawberry cupcake" class="w3-center" style="width:200px">
-                <p>
-        <br/>Vanilla  cupcake , topped with Strawberry frosting and a strawberry jelly bean. <br/></p><br/><p class="w3-small">Touch or click anywhere to close</p>
-    </div></div></div></div>
-
 </div>
+
+
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 <div class="w3-container w3-small w3-text-pink w3-hide-large">
