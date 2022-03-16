@@ -27,31 +27,13 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-22531588-1"
     ></script>
     <script src="logging.js"></script>
-    <script>
-      function sendCustomEvent2() {
-        let searchParams = {};
-
-        if ('URLSearchParams' in window) {
-          searchParams = new URLSearchParams(
-            window.location.search.substring(1),
-          );
-        }
-
-        loggingjs.logEvent(null, 'onLoadEvent', {
-          eventName: 'windowLoaded',
-          info: {
-            input: searchParams.get('input'),
-            unique_id: searchParams.get('unique_id'),
-            interface: 'old',
-          },
-        });
-      }
-    </script>
+    <script src="js/utils/util.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body
     id="top"
     class="w3-container w3-TOCCpfont"
-    onload="sendCustomEvent2()"
+    onload="logEventUtil('startHomepage')"
   >
       <div id="content">
         <header class="w3-container w3-theme-l3 w3-TOCCheaderFont custom-header">
@@ -97,14 +79,14 @@
         <div class="w3-dropdown-hover">
           <a class="w3-text-white cupcakes-bold" href="cupcakes.html">ORDER CUPCAKES</a>
           <div class="w3-dropdown-content w3-small w3-card-4 custom-dropdown">
-            <a onclick="w3_close()" href="cupcakes.html#Always-Available"
+            <a onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'alwaysAvailable'})" href="cupcakes.html#Always-Available"
             >ALWAYS AVAILABLE</a
             >
-            <a onclick="w3_close()" href="cupcakes.html#Holidays">HOLIDAYS</a>
-            <a onclick="w3_close()" href="cupcakes.html#Special-Events"
+            <a onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'holidays'})" href="cupcakes.html#Holidays">HOLIDAYS</a>
+            <a onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'specialEvents'})" href="cupcakes.html#Special-Events"
             >SPECIAL EVENTS</a
             >
-            <a onclick="w3_close()" href="cupcakes.html#Custom">CUSTOM</a>
+            <a onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'custom'})" href="cupcakes.html#Custom">CUSTOM</a>
           </div>
         </div>
         <a
