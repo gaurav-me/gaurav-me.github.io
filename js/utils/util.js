@@ -12,7 +12,7 @@ const logEventUtil = (eventName, additionalInfoObj) => {
         info: {
             input: searchParams.get('input'),
             unique_id: searchParams.get('unique_id'),
-            interface: 'old',
+            interface: 'new',
             ...additionalInfoObj
         },
     })
