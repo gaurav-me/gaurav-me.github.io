@@ -14,6 +14,21 @@
 <script src="logging.js"></script>
 <script src="js/utils/util.js"></script>
 <script>
+    let disableScrollLog = false; // Disables scroll logging when sidebar is clicked
+
+    function logSidebarClick(cakeCategory) {
+        disableScrollLog = true;
+        loggingjs.logEvent(null, 'catSidebarClickEvent', {
+            eventName: 'catSidebarCick',
+            info: {
+                input: searchParams.get('input'),
+                unique_id: searchParams.get('unique_id'),
+                interface: 'new',
+                cakeCategory,
+                },
+        });
+    }
+
     let searchParams = {};
 
     if ('URLSearchParams' in window) {
@@ -27,33 +42,38 @@
     window.addEventListener(
       'scroll',
       function (e) {
+        console.log(disableScrollLog)
 
         if(logNow) {
-            // console.log("startLogged")
-            loggingjs.logEvent(null, 'scrollStartEvent', {
-                eventName: 'scrollStart',
-                info: {
-                    input: searchParams.get('input'),
-                    unique_id: searchParams.get('unique_id'),
-                    interface: 'new',
-                    },
-            });
+            if(!disableScrollLog) {
+                // console.log("startLogged")
+                loggingjs.logEvent(null, 'scrollStartEvent', {
+                    eventName: 'scrollStart',
+                    info: {
+                        input: searchParams.get('input'),
+                        unique_id: searchParams.get('unique_id'),
+                        interface: 'new',
+                        },
+                });
+            }
             logNow = false
         }
-
 
         clearTimeout(isScrolling);
         isScrolling = setTimeout(function () {
             logNow = true;
             // console.log("stopLogged")
-            loggingjs.logEvent(null, 'scrollStopEvent', {
-                eventName: 'scrollStop',
-                info: {
-                input: searchParams.get('input'),
-                unique_id: searchParams.get('unique_id'),
-                interface: 'new',
-            },
-            });
+            if(!disableScrollLog) {
+                loggingjs.logEvent(null, 'scrollStopEvent', {
+                    eventName: 'scrollStop',
+                    info: {
+                    input: searchParams.get('input'),
+                    unique_id: searchParams.get('unique_id'),
+                    interface: 'new',
+                    },
+                });
+            }
+            disableScrollLog = false;
         }, 500);
       },
       false,
@@ -74,10 +94,10 @@
 <div class="w3-dropdown-hover">
     <a class="w3-padding w3-text-white" >CUPCAKES </a>
       <div class="w3-dropdown-content w3-small w3-round-large w3-white w3-card-4">
-      <a onclick="w3_close()" href="cupcakes.html#Always-Available">ALWAYS AVAILABLE</a>
-      <a onclick="w3_close()" href="cupcakes.html#Holidays">HOLIDAYS</a>
-      <a onclick="w3_close()" href="cupcakes.html#Special-Events">SPECIAL EVENTS</a>
-      <a onclick="w3_close()" href="cupcakes.html#Custom">CUSTOM</a>
+        <a onclick="w3_close()" href="cupcakes.html#Always-Available">ALWAYS AVAILABLE</a>
+        <a onclick="w3_close()" href="cupcakes.html#Holidays">HOLIDAYS</a>
+        <a onclick="w3_close()" href="cupcakes.html#Special-Events">SPECIAL EVENTS</a>
+        <a onclick="w3_close()" href="cupcakes.html#Custom">CUSTOM</a>
       </div>
 </div>
 <a class="w3-text-white w3-round-large" href="givingback.html">COMMUNITY</a>
@@ -90,12 +110,12 @@
 
 <div class="content-wrapper">
     <nav class="w3-sidenav w3-theme-l3 w3-TOCCheaderFont w3-card-2 w3-animate-right custom-catbar" id="TOCCSidenav">
-        <a class="w3-text-white" href="cupcakes.html#Chocolate-Peanut-Butter-ret">Chocolate</a>
-        <a class="w3-text-white" href="cupcakes.html#Lemon-ret">Vanilla</a>
-        <a class="w3-text-white" href="cupcakes.html#Red-Velvet-ret">Red Velvet</a>
-        <a class="w3-text-white" href="cupcakes.html#Holidays">Holidays</a>
-        <a class="w3-text-white" href="cupcakes.html#Special-Events">Special Events and Festivals</a>
-        <a class="w3-text-white" href="cupcakes.html#Custom">Custom</a>
+        <a onclick="logSidebarClick('Chocolate')" class="w3-text-white" href="cupcakes.html#Chocolate-Peanut-Butter-ret">Chocolate</a>
+        <a onclick="logSidebarClick('Vanilla')" class="w3-text-white" href="cupcakes.html#Lemon-ret">Vanilla</a>
+        <a onclick="logSidebarClick('Red Velvet')" class="w3-text-white" href="cupcakes.html#Red-Velvet-ret">Red Velvet</a>
+        <a onclick="logSidebarClick('Holidays')" class="w3-text-white" href="cupcakes.html#Holidays">Holidays</a>
+        <a onclick="logSidebarClick('Special Events and Festivals')" class="w3-text-white" href="cupcakes.html#Special-Events">Special Events and Festivals</a>
+        <a onclick="logSidebarClick('Custom')" class="w3-text-white" href="cupcakes.html#Custom">Custom</a>
     </nav>
 
     <div id="content" style="width:85%; text-align:center;">
