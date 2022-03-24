@@ -43,6 +43,32 @@
             const d = new Date();
             document.getElementById('Torontodate').innerHTML = d.toDateString();
           </script>
+          <script type="text/javascript">
+            const arrangementPathname = getArrangementPathname();
+
+            window.onload = function () {
+              document.getElementById(
+                'orderCupcakesHomepageLink',
+              ).href = `${arrangementPathname}${window.location.search}`;
+
+              [
+                { id: 'orderCupcakesCustomHomepageLink', name: 'Custom' },
+                {
+                  id: 'orderCupcakesSpecialEventsHomepageLink',
+                  name: 'Special-Events',
+                },
+                { id: 'orderCupcakesHolidaysHomepageLink', name: 'Holidays' },
+                {
+                  id: 'orderCupcakesAlwaysAvailableHomepageLink',
+                  name: 'Always-Available',
+                },
+              ].forEach((link) => {
+                document.getElementById(
+                  link.id,
+                ).href = `${arrangementPathname}${window.location.search}#${link.name}`;
+              });
+            };
+          </script>
 
           <!--  Banners in header  -->
           <!-- Valentine's Day Banner
@@ -79,26 +105,30 @@
       id="TOCCSidenav"
     >
       <div class="w3-dropdown-hover">
-        <a class="w3-text-white cupcakes-bold" href="cupcakes.html"
+        <a id="orderCupcakesHomepageLink" class="w3-text-white cupcakes-bold"
           >ORDER CUPCAKES</a
         >
         <div class="w3-dropdown-content w3-small w3-card-4 custom-dropdown">
           <a
+            id="orderCupcakesAlwaysAvailableHomepageLink"
             onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'alwaysAvailable'})"
             href="cupcakes.html#Always-Available"
             >ALWAYS AVAILABLE</a
           >
           <a
+            id="orderCupcakesHolidaysHomepageLink"
             onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'holidays'})"
             href="cupcakes.html#Holidays"
             >HOLIDAYS</a
           >
           <a
+            id="orderCupcakesSpecialEventsHomepageLink"
             onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'specialEvents'})"
             href="cupcakes.html#Special-Events"
             >SPECIAL EVENTS</a
           >
           <a
+            id="orderCupcakesCustomHomepageLink"
             onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'custom'})"
             href="cupcakes.html#Custom"
             >CUSTOM</a
