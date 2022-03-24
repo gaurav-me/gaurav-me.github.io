@@ -29,3 +29,9 @@
 | 4          | Sidebar 3 CPR     |
 | 5          | Sidebar + C 6 CPR |
 | 6          | Sidebar + C 3 CPR |
+
+## Sample pathname
+
+```
+/cupcakes/arrangement6?uid=1234&arrangement=6
+```
