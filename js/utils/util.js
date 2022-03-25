@@ -90,3 +90,18 @@ const getIVDetails = (arr) => {
       return {};
   }
 };
+
+function onClickAddToCart(e, eventName) {
+  e.preventDefault();
+  const startBrowsing = window.sessionStorage.getItem('startBrowsing');
+  const browsingTime = Math.ceil(
+    new Date().getTime() - JSON.parse(startBrowsing),
+  );
+  sessionStorage.removeItem('startBrowsing');
+
+  w3_close();
+  logEventUtil(eventName, { DV3: browsingTime });
+  alert(
+    'Cupcake added to cart! This is the end of the flow, you may now close this tab.',
+  );
+}
