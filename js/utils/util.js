@@ -1,7 +1,7 @@
 const logEventUtil = (eventName, additionalInfoObj) => {
   const searchParams = getSearchParams();
-  const arrangement = searchParams.get('arrangement');
-  const ivDetailObj = getIVDetails(arrangement);
+  const combination = searchParams.get('combination');
+  const ivDetailObj = getIVDetails(combination);
 
   loggingjs.logEvent(null, eventName, {
     eventName: eventName,
@@ -9,31 +9,31 @@ const logEventUtil = (eventName, additionalInfoObj) => {
     info: {
       trial_id: searchParams.get('trial_id'),
       unique_id: searchParams.get('unique_id'),
-      arrangement,
+      combination,
       ...ivDetailObj,
       ...additionalInfoObj,
     },
   });
 };
 
-const getArrangementPathname = () => {
+const getCombinationPathname = () => {
   const searchParams = getSearchParams();
-  const arrangement = searchParams.get('arrangement');
+  const combination = searchParams.get('combination');
   const basePath = 'cupcakes';
 
-  switch (arrangement) {
+  switch (combination) {
     case '1':
-      return `${basePath}/arrangement1.html`;
+      return `${basePath}/combination1.html`;
     case '2':
-      return `${basePath}/arrangement2.html`;
+      return `${basePath}/combination2.html`;
     case '3':
-      return `${basePath}/arrangement3.html`;
+      return `${basePath}/combination3.html`;
     case '4':
-      return `${basePath}/arrangement4.html`;
+      return `${basePath}/combination4.html`;
     case '5':
-      return `${basePath}/arrangement5.html`;
+      return `${basePath}/combination5.html`;
     case '6':
-      return `${basePath}/arrangement6.html`;
+      return `${basePath}/combination6.html`;
     default:
       return `${basePath}.html`;
   }

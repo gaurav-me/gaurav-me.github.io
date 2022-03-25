@@ -44,12 +44,12 @@
             document.getElementById('Torontodate').innerHTML = d.toDateString();
           </script>
           <script type="text/javascript">
-            const arrangementPathname = getArrangementPathname();
+            const combinationPathname = getCombinationPathname();
 
             window.onload = function () {
               document.getElementById(
                 'orderCupcakesHomepageLink',
-              ).href = `${arrangementPathname}${window.location.search}`;
+              ).href = `${combinationPathname}${window.location.search}`;
 
               [
                 { id: 'orderCupcakesCustomHomepageLink', name: 'Custom' },
@@ -65,7 +65,7 @@
               ].forEach((link) => {
                 document.getElementById(
                   link.id,
-                ).href = `${arrangementPathname}${window.location.search}#${link.name}`;
+                ).href = `${combinationPathname}${window.location.search}#${link.name}`;
               });
 
               window.sessionStorage.setItem(

@@ -19,7 +19,7 @@
 | 7   | Red velvet raspberry button onclick | Click on custom cupcake Add To Cart Button                             | clickedRedVelvetAddToCart |
 | 8   | Custom cupcake button onclick       | Click on custom cupcake Add To Cart Button, also the journey end event | clickedCustomAddToCart    |
 
-## Arrangement mapping
+## Combination mapping
 
 | Argmnt No. | Condition         |
 | :--------- | :---------------- |
@@ -33,5 +33,5 @@
 ## Sample pathname
 
 ```
-/cupcakes/arrangement6?uid=1234&arrangement=6
+/cupcakes/combination6?uid=1234&combination=6
 ```
