@@ -94,13 +94,15 @@ const getIVDetails = (arr) => {
 function onClickAddToCart(e, eventName) {
   e.preventDefault();
   const startBrowsing = window.sessionStorage.getItem('startBrowsing');
+  const homepageTime = window.sessionStorage.getItem('homepageTime');
   const browsingTime = Math.ceil(
     new Date().getTime() - JSON.parse(startBrowsing),
   );
   sessionStorage.removeItem('startBrowsing');
+  sessionStorage.removeItem('homepageTime');
 
   w3_close();
-  logEventUtil(eventName, { DV3: browsingTime });
+  logEventUtil(eventName, { DV2: homepageTime, DV3: browsingTime });
   alert(
     'Cupcake added to cart! This is the end of the flow, you may now close this tab.',
   );
