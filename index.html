@@ -67,6 +67,11 @@
                   link.id,
                 ).href = `${arrangementPathname}${window.location.search}#${link.name}`;
               });
+
+              window.sessionStorage.setItem(
+                'startHomepage',
+                JSON.stringify(new Date().getTime()),
+              );
             };
           </script>
 
@@ -105,31 +110,34 @@
       id="TOCCSidenav"
     >
       <div class="w3-dropdown-hover">
-        <a id="orderCupcakesHomepageLink" class="w3-text-white cupcakes-bold"
+        <a
+          id="orderCupcakesHomepageLink"
+          class="w3-text-white cupcakes-bold"
+          onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage')"
           >ORDER CUPCAKES</a
         >
         <div class="w3-dropdown-content w3-small w3-card-4 custom-dropdown">
           <a
             id="orderCupcakesAlwaysAvailableHomepageLink"
-            onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'alwaysAvailable'})"
+            onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'alwaysAvailable'})"
             href="cupcakes.html#Always-Available"
             >ALWAYS AVAILABLE</a
           >
           <a
             id="orderCupcakesHolidaysHomepageLink"
-            onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'holidays'})"
+            onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'holidays'})"
             href="cupcakes.html#Holidays"
             >HOLIDAYS</a
           >
           <a
             id="orderCupcakesSpecialEventsHomepageLink"
-            onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'specialEvents'})"
+            onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'specialEvents'})"
             href="cupcakes.html#Special-Events"
             >SPECIAL EVENTS</a
           >
           <a
             id="orderCupcakesCustomHomepageLink"
-            onclick="onClickCupcakesSideMenu('clickedGoToBrowsingPage', {clicked: 'custom'})"
+            onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'custom'})"
             href="cupcakes.html#Custom"
             >CUSTOM</a
           >
