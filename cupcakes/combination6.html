@@ -8,7 +8,7 @@
 <meta name="description" content="Toronto Cupcake is Canada's destination for gourmet cupcakes. We bake our cupcakes on a daily basis using the finest ingredients. You can order any of our cupcakes here.">
 
 <link rel="shortcut icon" href="../favicon.ico" />
-<link rel="canonical" href="https://www.torontocupcake.com/cupcakes.html" />
+<link rel="canonical" />
 <link href="../css/cupcakes.css" rel="stylesheet">
 <link href="../css/index.css" rel="stylesheet" />
 <script src="../logging.js"></script>
@@ -86,10 +86,10 @@
   onclick="w3_close()"
   class="w3-closenav w3-text-white w3-pink w3-large">MENU<img class="w3-right" src="../images/close.png" alt="Toronto Cupcake logo"></a>
 
-<a class="w3-text-white w3-round-large" href="../index.html">HOME</a>
-<a class="w3-text-white w3-round-large" href="about.html">ABOUT</a>
-<a class="w3-text-white w3-round-large" href="CorporateEvents.html">CORPORATE EVENTS</a>
-<a class="w3-text-white w3-round-large" href="occasions.html">OCCASIONS</a>
+<a class="w3-text-white w3-round-large">HOME</a>
+<a class="w3-text-white w3-round-large">ABOUT</a>
+<a class="w3-text-white w3-round-large">CORPORATE EVENTS</a>
+<a class="w3-text-white w3-round-large">OCCASIONS</a>
 <div class="w3-dropdown-hover">
     <a class="w3-padding w3-text-white" >CUPCAKES </a>
       <div class="w3-dropdown-content w3-small w3-round-large w3-white w3-card-4">
@@ -99,12 +99,12 @@
         <a onclick="w3_close()" href="cupcakes.html#Custom">CUSTOM</a>
       </div>
 </div>
-<a class="w3-text-white w3-round-large" href="givingback.html">COMMUNITY</a>
-<a class="w3-text-white w3-round-large" href="faqs.html">FAQs</a>
-<a class="w3-text-white w3-round-large" href="resources.html">RESOURCES</a>
-<a class="w3-text-white w3-round-large" href="contact.html">CONNECT</a>
-<a class="w3-text-white w3-round-large" href="delivery.html">CUPCAKE DELIVERY</a>
-<a class="w3-text-white w3-round-large" href="cgi-bin/html-cart/html-cart.cgi?display_cart=yes&page=cupcakes.html">VIEW CART</a>
+<a class="w3-text-white w3-round-large">COMMUNITY</a>
+<a class="w3-text-white w3-round-large">FAQs</a>
+<a class="w3-text-white w3-round-large">RESOURCES</a>
+<a class="w3-text-white w3-round-large">CONNECT</a>
+<a class="w3-text-white w3-round-large">CUPCAKE DELIVERY</a>
+<a class="w3-text-white w3-round-large">VIEW CART</a>
 </nav>
 
 <div class="content-wrapper">
@@ -153,7 +153,7 @@
     Mother's Day Banner END -->
     <!-- Corporate Logo Banner -->
     <br/>
-    <span class=" w3-animate-right"> Check out our new <a href="CorporateEvents.html">corporate/event logo cupcakes - Click for details </a></span>
+    <span class=" w3-animate-right"> Check out our new <a>corporate/event logo cupcakes - Click for details </a></span>
     <!-- Corporate Logo Banner END -->
     </header>
     <!-- translate box code  -->
@@ -183,7 +183,7 @@
         <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
     <div class="w3-container">
         <input type="hidden" name="qty" value="12">
-        <input type="image" src="../images/small.png" width="110"  height="30" width="100" height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" width="100" height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
         <p class="w3-small w3-slim">$38.00/doz </p> 
         <div class="w3-justify">
         <p>In a panic or can't decide? Need a dozen awesome cupcakes but don't want to pick them out individually?  Read no more just hit the add to cart button and we will pick out 12 delicious treats from our "always available" cupcakes.
@@ -243,7 +243,7 @@
     <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     </div>
     <div id="Chocolate-Hazelnut" class="w3-modal w3-transparent" onclick="this.style.display='none'">
@@ -273,7 +273,7 @@
     <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     </div>
     <div id="Chocolate-Coconut" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
@@ -303,7 +303,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     </div>
     <div id="Chocolate-Chocolate" class="w3-modal w3-transparent" onclick="this.style.display='none'">
@@ -331,7 +331,7 @@
     <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     
     </div>
     <div id="Chocolate-Vanilla" class="w3-modal w3-transparent" onclick="this.style.display='none'">
@@ -362,7 +362,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!--    <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" alt="Add to Cart" name="order">  
+    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" alt="Add to Cart" name="order">  
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -393,7 +393,7 @@
             <span class="w3-small">QTY</span>
             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
         
     </div>
     <div id="Chocolate-Vanilla-Chocolate-Ganache" class="w3-modal w3-transparent" onclick="this.style.display='none'">
@@ -421,7 +421,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -454,7 +454,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -482,7 +482,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -511,7 +511,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -540,7 +540,7 @@
             <p>Chocolate Carmel II</br>cupcake<p>
             <span class="w3-small">QTY</span>
             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
         
     </div>
@@ -570,7 +570,7 @@
     <p>Chocolate Chocolate</br>Ganache cupcake</p>
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -599,7 +599,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-medium w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -630,7 +630,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -657,7 +657,7 @@
     <p>Vanilla Chocolate</br>Ganche cupcake</p>
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -685,7 +685,7 @@
     <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     
     </div>
     <div id="Vanilla-Caramel" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
@@ -711,7 +711,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     
     </div>
     <div id="Vanilla-Strawberry" class="w3-modal w3-transparent" onclick="this.style.display='none'">
@@ -745,7 +745,7 @@
     <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
   <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -777,7 +777,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -805,7 +805,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -834,7 +834,7 @@
     <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
      <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -861,7 +861,7 @@
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1146,7 +1146,7 @@ END Halloween -->
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1175,7 +1175,7 @@ END Halloween -->
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1233,7 +1233,7 @@ END Halloween -->
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1262,7 +1262,7 @@ END Halloween -->
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1280,7 +1280,7 @@ END Halloween -->
 </div>
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 <h2 id="Special-Events" class="w3-text-pink w3-center w3-TOCCfont">Special Events and Festivals </h2>
-        If you are looking for information regarding weddings, engagements, or other special occasions visit our <a href="https://www.torontocupcake.com/occasions.html" target="_blank" rel="noopener"> occasions</a> page.
+        If you are looking for information regarding weddings, engagements, or other special occasions visit our <a target="_blank" rel="noopener"> occasions</a> page.
         <div class="w3-row">
 <!--
     <div class="w3-col w3-container m6 l2">
@@ -1325,7 +1325,7 @@ END Halloween -->
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1338,7 +1338,7 @@ END Halloween -->
                 <br/>
                 <img src="../images/cupcakes_flavours/PrideDay.jpg" title="Pride" alt="Toronto Cupcakes Pride cupcake" class="w3-center" style="width:200px">
                 <p>
-        <br/>With over an estimated  1.3 million people in attendance you would think someone would want a cupcake??   <a href="https://www.pridetoronto.com/" target="_blank" rel="noopener">Enjoy the parade and marches by checking out pridetoronto.com </a> and aren't we lucky to be living in such a diverse country!<br/><br/><span class="w3-text w3-small w3-slim"> Available 25 June - 5 July or by special order</span><br/></p><br/><p class="w3-small ">Touch or click anywhere to close</p>
+        <br/>With over an estimated  1.3 million people in attendance you would think someone would want a cupcake??   <a target="_blank" rel="noopener">Enjoy the parade and marches by checking out pridetoronto.com </a> and aren't we lucky to be living in such a diverse country!<br/><br/><span class="w3-text w3-small w3-slim"> Available 25 June - 5 July or by special order</span><br/></p><br/><p class="w3-small ">Touch or click anywhere to close</p>
     </div></div></div></div>
 
     <div class="w3-col w3-container m6 l4">
@@ -1354,7 +1354,7 @@ END Halloween -->
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1367,7 +1367,7 @@ END Halloween -->
                 <br/>
                 <img src="../images/cupcakes_flavours/jazz.jpg" title="Beaches Jazz" alt="Toronto Cupcakes Beaches Jazz cupcake" class="w3-center" width="200" height="250">
                 <p>
-        <br/>Nothing like cool jazz and a cupcake.  This cupcake has all the right notes. Why not enjoy your cupcake while enjoying some of the best music around by joining in the <a href="https://www.beachesjazz.com" target="_blank " rel="noopener">Beaches International jazz Festival</a>. <br/><br/><span class="w3-text w3-small w3-slim"> Available June - July or by special order</span> </p><br/><p class="w3-small ">Touch or click anywhere to close</p>
+        <br/>Nothing like cool jazz and a cupcake.  This cupcake has all the right notes. Why not enjoy your cupcake while enjoying some of the best music around by joining in the <a target="_blank " rel="noopener">Beaches International jazz Festival</a>. <br/><br/><span class="w3-text w3-small w3-slim"> Available June - July or by special order</span> </p><br/><p class="w3-small ">Touch or click anywhere to close</p>
     </div></div></div></div>
 
     <div class="w3-col w3-container m6 l4">
@@ -1383,7 +1383,7 @@ END Halloween -->
 <span class="w3-small">QTY</span>
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
     
     </div>
@@ -1394,14 +1394,14 @@ END Halloween -->
                 <h4 class="w3-container w3-center w3-text-theme">Toronto International Film Festival</h4>
                 <img src="../images/cupcakes_flavours/Tiff.jpg" title="Toronto International Film Festival" alt="Toronto Cupcakes Toronto International Film Festival cupcake" class="w3-center" style="width:200px">
                 <p>
-                    <p class="w3-bold">Lights, Camera, Action!</p><p>Toronto's International Film Festival is a world class event 2nd only to Cannes. <a href="https://www.tiff.net" target="_blank" rel="noopener"> TIFF</a> is dedicated to presenting the best of international and Canadian cinema to film lovers - click on the link to browse all the good deeds being done by TIFF. <br/> Many of us have experienced the Galas and the rush lines - a truly wonderful time for all.  This year bring along a dozen of these special cupcakes to share with your rush or ticket holder line friends.  <br/>A chocolate cupcake with Madagascar bourbon vanilla frosting topped with a chocolate set of comedy tragedy masks<br/><span class="w3-text w3-small w3-slim"> Available September 7 - September 18 or by special order</span> <br/></div>p><br/><p class="w3-small ">Touch or click anywhere to close</p>
+                    <p class="w3-bold">Lights, Camera, Action!</p><p>Toronto's International Film Festival is a world class event 2nd only to Cannes. <a target="_blank" rel="noopener"> TIFF</a> is dedicated to presenting the best of international and Canadian cinema to film lovers - click on the link to browse all the good deeds being done by TIFF. <br/> Many of us have experienced the Galas and the rush lines - a truly wonderful time for all.  This year bring along a dozen of these special cupcakes to share with your rush or ticket holder line friends.  <br/>A chocolate cupcake with Madagascar bourbon vanilla frosting topped with a chocolate set of comedy tragedy masks<br/><span class="w3-text w3-small w3-slim"> Available September 7 - September 18 or by special order</span> <br/></div>p><br/><p class="w3-small ">Touch or click anywhere to close</p>
     </div></div></div></div>
 </div>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 <h2 id="Custom" class="w3-text-pink w3-center w3-TOCCfont">Custom </h2>
-       <p class="w3-justify"> If you are looking for information regarding weddings, engagements, or other special occasions visit our <a href="https://www.torontocupcake.com/occasions.html" target="_blank" rel="noopener"> occasions</a> page.</p>
-        <p class="w3-justify">If you are looking for information regarding customised logo cupcakes, Corporate Events Planning, or Marketing Events/Fulfillment visit our <a href="https://www.torontocupcake.com/CorporateEvents.html" target="_blank" rel="noopener"> Corporate Events</a> page.</p>
+       <p class="w3-justify"> If you are looking for information regarding weddings, engagements, or other special occasions visit our <a target="_blank" rel="noopener"> occasions</a> page.</p>
+        <p class="w3-justify">If you are looking for information regarding customised logo cupcakes, Corporate Events Planning, or Marketing Events/Fulfillment visit our <a target="_blank" rel="noopener"> Corporate Events</a> page.</p>
 <div class="w3-row">
     <div class="w3-col w3-center w3-container m6 l4">
     <hr>
@@ -1447,7 +1447,7 @@ END Halloween -->
 <p class="w3-small">QTY
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a></p>
     
     </div>
@@ -1478,7 +1478,7 @@ END Halloween -->
     <p class="w3-small">QTY
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a></p>
     
     </div>
@@ -1509,7 +1509,7 @@ END Halloween -->
     <p class="w3-small">QTY
     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
 <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-<input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+<input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a></p>
     
     </div>
@@ -1531,17 +1531,17 @@ END Halloween -->
 <hr style="height:4px;border-width:0;color:gray;background-color:gray">
     <div class="w3-footer">
         <p>
-        <a class="w3-padding-small" href="../index.html">Home</a>
-        <a class="w3-padding-small" href="../about.html">About</a>
-        <a class="w3-padding-small" href="../cupcakes.html">Cupcakes</a>
-        <a class="w3-padding-small" href="../CorporateEvents.html">Corp Events</a>
-        <a class="w3-padding-small" href="../occasions.html">Occasions</a>
-        <a class="w3-padding-small" href="../givingback.html">Giving Back</a>
-        <a class="w3-padding-small" href="../faqs.html">FAQs</a>
-        <a class="w3-padding-small" href="../resources.html">Resources</a>
-        <a class="w3-padding-small" href="../contact.html">Contact Us</a>
-        <a class="w3-padding-small" href="../delivery.html">Cupcake Delivery</a>
-        <a class="w3-padding-small" href="../EmploymentOpportunities.html">Employment</a></p>
+        <a class="w3-padding-small">Home</a>
+        <a class="w3-padding-small">About</a>
+        <a class="w3-padding-small">Cupcakes</a>
+        <a class="w3-padding-small">Corp Events</a>
+        <a class="w3-padding-small">Occasions</a>
+        <a class="w3-padding-small">Giving Back</a>
+        <a class="w3-padding-small">FAQs</a>
+        <a class="w3-padding-small">Resources</a>
+        <a class="w3-padding-small">Contact Us</a>
+        <a class="w3-padding-small">Cupcake Delivery</a>
+        <a class="w3-padding-small">Employment</a></p>
     </div>
 <p style="color: #ffffee" > <h2 style="color: #ffffee">Toronto cupcakes</h2> <p style="color: #ffffee" >now deliver cupcakes throughout the GTA and beyond.  <h2 style="color: #ffffee"> Cupcakes are delivered to Toronto and the GTA</h2><p style="color: #ffffee" >, Markham, Scarborough, Etobicoke, Mississauga, Barrie, New Market, Brampton, Caledon, Oakville, Burlington, Hamilton, Milton, Richmond Hill, Aurora, Whitby, Pickering, Vaughan and other locations around the GTA.
 The Toronto Cupcake bakery, is most famous for its delicious gourmet cupcakes. <h2 style="color: #ffffee">Toronto Cupcake </h2> <p style="color: #ffffee" >cupcakes are the perfect gift for any special occasion including birthdays, weddings, graduations, anniversaries, and corporate events.
