@@ -113,6 +113,11 @@ function onClickAddToCart(e, eventName) {
   w3_close();
   logEventUtil(eventName, { DV2: homepageTime, DV3: browsingTime });
   alert(
-    'Cupcake added to cart! This is the end of the flow, you may now close this tab.',
+    'Cupcake added to cart! Please proceed to the next task by click on the green button at the bottom of the page.',
   );
+}
+
+function onClickWrongAddToCart(e) {
+  e.preventDefault();
+  alert('Oops! You have selected the wrong cupcake. Please try again.');
 }
