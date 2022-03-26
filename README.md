@@ -31,20 +31,20 @@
 
 ## Combination mapping
 
-| Cbtn No.   | Condition         |
-| :--------- | :---------------- |
-| 1          | No sidebar, 6 CPR, Fixed homepage sidebar |
-| 2          | No sidebar, 3 CPR, Fixed homepage sidebar  |
-| 3          | Sidebar, 6 CPR, Fixed homepage sidebar     |
-| 4          | Sidebar, 3 CPR, Fixed homepage sidebar     |
-| 5          | Sidebar + C, 6 CPR, Fixed homepage sidebar |
-| 6          | Sidebar + C, 3 CPR, Fixed homepage sidebar |
-| 7          | No sidebar, 6 CPR, Floating homepage sidebar |
-| 8          | No sidebar, 3 CPR, Floating homepage sidebar  |
-| 9          | Sidebar, 6 CPR, Floating homepage sidebar     |
-| 10          | Sidebar, 3 CPR, Floating homepage sidebar     |
-| 11          | Sidebar + C, 6 CPR, Floating homepage sidebar |
-| 12          | Sidebar + C, 3 CPR, Floating homepage sidebar |
+| Cbtn No.   | Condition         | Homepage         | Cupcake page         |
+| :--------- | :---------------- | :---------------- | :---------------- |
+| 1          | No sidebar, 6 CPR, Fixed homepage sidebar | homepage1.html | combination1.html
+| 2          | No sidebar, 3 CPR, Fixed homepage sidebar  | homepage1.html | combination2.html
+| 3          | Sidebar, 6 CPR, Fixed homepage sidebar     | homepage1.html | combination3.html
+| 4          | Sidebar, 3 CPR, Fixed homepage sidebar     | homepage1.html | combination4.html
+| 5          | Sidebar + C, 6 CPR, Fixed homepage sidebar | homepage1.html | combination5.html
+| 6          | Sidebar + C, 3 CPR, Fixed homepage sidebar | homepage1.html | combination6.html
+| 7          | No sidebar, 6 CPR, Floating homepage sidebar | homepage2.html | combination1.html
+| 8          | No sidebar, 3 CPR, Floating homepage sidebar  | homepage2.html | combination2.html
+| 9          | Sidebar, 6 CPR, Floating homepage sidebar     | homepage2.html | combination3.html
+| 10          | Sidebar, 3 CPR, Floating homepage sidebar     | homepage2.html | combination4.html
+| 11          | Sidebar + C, 6 CPR, Floating homepage sidebar | homepage2.html | combination5.html
+| 12          | Sidebar + C, 3 CPR, Floating homepage sidebar | homepage2.html | combination6.html
 
 ## Sample pathname
 
@@ -53,5 +53,5 @@
 ```
 Landing page: 
 ```
-/homepage1.html?uid=1234&trial_id=4321&combination=6
+/homepage1.html?unique_id=1234&trial_id=4321&combination=6
 ```
