@@ -23,15 +23,25 @@
 
 | Argmnt No. | Condition         |
 | :--------- | :---------------- |
-| 1          | No sidebar, 6 CPR |
-| 2          | No sidebar 3 CPR  |
-| 3          | Sidebar 6 CPR     |
-| 4          | Sidebar 3 CPR     |
-| 5          | Sidebar + C 6 CPR |
-| 6          | Sidebar + C 3 CPR |
+| 1          | No sidebar, 6 CPR, Fixed homepage sidebar |
+| 2          | No sidebar, 3 CPR, Fixed homepage sidebar  |
+| 3          | Sidebar, 6 CPR, Fixed homepage sidebar     |
+| 4          | Sidebar, 3 CPR, Fixed homepage sidebar     |
+| 5          | Sidebar + C, 6 CPR, Fixed homepage sidebar |
+| 6          | Sidebar + C, 3 CPR, Fixed homepage sidebar |
+| 7          | No sidebar, 6 CPR, Floating homepage sidebar |
+| 8          | No sidebar, 3 CPR, Floating homepage sidebar  |
+| 9          | Sidebar, 6 CPR, Floating homepage sidebar     |
+| 10          | Sidebar, 3 CPR, Floating homepage sidebar     |
+| 11          | Sidebar + C, 6 CPR, Floating homepage sidebar |
+| 12          | Sidebar + C, 3 CPR, Floating homepage sidebar |
 
 ## Sample pathname
 
 ```
-/cupcakes/combination6?uid=1234&combination=6
+/cupcakes/combination6?uid=1234&trial_id=4321&combination=6
+```
+Landing page: 
+```
+/homepage1.html?uid=1234&trial_id=4321&combination=6
 ```

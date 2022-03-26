@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Toronto Cupcake | Home | Cupcake Delivery | GTA</title>
+    <meta
+            name="Keywords"
+            content="Toronto cupcakes delivery Canada cupcake deliverysend cupcakes Toronto indeginous jazz tiff christmas easter halloween valentine gay pride Canada day cake wedding elegant birthday bakery sweets chocolate Canada TO Toronto Ontario cupcakes in Toronto"
+    />
+    <meta
+            name="description"
+            content="Toronto Cupcake or Toronto Cupcakes is Canada's destination for gourmet cupcakes. We bake our cupcakes fresh on a daily basis using the finest ingredients. Corporate and retail customers welcome."
+    />
+    <link rel="canonical" href="https://www.torontocupcake.com/index.html" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- <link href="css/w3.css" rel="stylesheet">
+<link href="css/w3-css-override.css" rel="stylesheet">
+<link rel="stylesheet" href="css/w3-theme-pink.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+-->
+    <link href="css/index.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+    <script defer src="js/gtag.js"></script>
+    <script
+            defer
+            src="https://www.googletagmanager.com/gtag/js?id=UA-22531588-1"
+    ></script>
+    <script src="logging.js"></script>
+    <script src="js/utils/util.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body
+        id="top"
+        class="w3-container w3-TOCCpfont"
+        onload="logEventUtil('startHomepage')"
+>
+<div id="content">
+    <header class="w3-container w3-theme-l3 w3-TOCCheaderFont custom-header">
+        <p class="w3-center custom-para">
+            <span id="Torontodate"> </span>
+            <script>
+                const d = new Date();
+                document.getElementById('Torontodate').innerHTML = d.toDateString();
+            </script>
+            <script type="text/javascript">
+                const combinationPathname = getCombinationPathname();
+
+                window.onload = function () {
+                    document.getElementById(
+                        'orderCupcakesHomepageLink',
+                    ).href = `${combinationPathname}${window.location.search}`;
+
+                    [
+                        { id: 'orderCupcakesCustomHomepageLink', name: 'Custom' },
+                        {
+                            id: 'orderCupcakesSpecialEventsHomepageLink',
+                            name: 'Special-Events',
+                        },
+                        { id: 'orderCupcakesHolidaysHomepageLink', name: 'Holidays' },
+                        {
+                            id: 'orderCupcakesAlwaysAvailableHomepageLink',
+                            name: 'Always-Available',
+                        },
+                    ].forEach((link) => {
+                        document.getElementById(
+                            link.id,
+                        ).href = `${combinationPathname}${window.location.search}#${link.name}`;
+                    });
+
+                    window.sessionStorage.setItem(
+                        'startHomepage',
+                        JSON.stringify(new Date().getTime()),
+                    );
+                };
+            </script>
+
+            <!--  Banners in header  -->
+            <!-- Valentine's Day Banner
+    <br/>
+    <span class="  w3-animate-right">Check out our special<a href="ValentinesDaySpecial.html">  Valentine's Day Cupcakes!!</a>  Cupcakes for your Cupcake!!
+    Valentine's Day Banner END
+    Mother's Day Banner
+    <br/>
+    <span class=" w3-animate-right"> Check out our special  <a href="MothersDaySpecial.html">Mother's Day Cupcakes!!</a>  I love you Mom!!     </span>
+    Mother's Day Banner END -->
+            <!-- Corporate Logo Banner -->
+            <br />
+            <span class="w3-animate-right">
+            Check out our new
+            <a href="CorporateEvents.html"
+            >corporate/event logo cupcakes - Click for details
+            </a></span
+            >
+            <!-- Corporate Logo Banner END -->
+        </p>
+        <a href="index.html"
+        ><img
+                src="images/transparent-TO-logo.png"
+                alt="Toronto Cupcake logo"
+                class="w3-left custom-img"
+                height="70"
+        /></a>
+    </header>
+
+    <!--    Translate code for box goes here  -->
+</div>
+<nav
+        class="w3-sidenav w3-theme-l3 w3-TOCCheaderFont w3-card-2 w3-animate-left custom-sidenav"
+        id="TOCCSidenav"
+>
+    <div class="w3-dropdown-hover">
+        <a
+                id="orderCupcakesHomepageLink"
+                class="w3-text-white cupcakes-bold"
+                onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage')"
+        >ORDER CUPCAKES</a
+        >
+        <div class="w3-dropdown-content w3-small w3-card-4 custom-dropdown">
+            <a
+                    id="orderCupcakesAlwaysAvailableHomepageLink"
+                    onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'alwaysAvailable'})"
+                    href="cupcakes.html#Always-Available"
+            >ALWAYS AVAILABLE</a
+            >
+            <a
+                    id="orderCupcakesHolidaysHomepageLink"
+                    onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'holidays'})"
+                    href="cupcakes.html#Holidays"
+            >HOLIDAYS</a
+            >
+            <a
+                    id="orderCupcakesSpecialEventsHomepageLink"
+                    onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'specialEvents'})"
+                    href="cupcakes.html#Special-Events"
+            >SPECIAL EVENTS</a
+            >
+            <a
+                    id="orderCupcakesCustomHomepageLink"
+                    onclick="onClickCupcakesSideMenu(event, 'clickedGoToBrowsingPage', {clicked: 'custom'})"
+                    href="cupcakes.html#Custom"
+            >CUSTOM</a
+            >
+        </div>
+    </div>
+    <a
+            class="w3-text-white"
+            href="cgi-bin/html-cart/html-cart.cgi?display_cart=yes&page=cupcakes.html"
+    >VIEW CART</a
+    >
+    <a class="w3-text-white" href="index.html">HOME</a>
+    <a class="w3-text-white" href="about.html">ABOUT</a>
+    <a class="w3-text-white" href="CorporateEvents.html">CORPORATE EVENTS</a>
+    <a class="w3-text-white" href="occasions.html">OCCASIONS</a>
+
+    <a class="w3-text-white" href="givingback.html">COMMUNITY</a>
+    <a class="w3-text-white" href="faqs.html">FAQs</a>
+    <a class="w3-text-white" href="resources.html">RESOURCES</a>
+    <a class="w3-text-white" href="contact.html">CONNECT</a>
+    <a class="w3-text-white" href="delivery.html">CUPCAKE DELIVERY</a>
+</nav>
+<!--Content Area-->
+
+<hr />
+<div class="main-content-area w3-center custom-main-area">
+    <div
+            class="w3-theme-l3 w3-TOCCheaderFont w3-bar w3-center w3-round-large w3-border w3-topbar w3-leftbar w3-rightbar w3-bottombar w3-bar-item"
+    >
+        <a href="Covid19.html">Covid 19 Protocals and Information</a>
+    </div>
+    <h1 class="w3-wide">TORONTO CUPCAKE</h1>
+    <img
+            src="images/main.webp"
+            alt="Toronto cupcake - Toronto cupcakes"
+            class="w3-padding-16 w3-hide-small w3-hide-medium"
+            width="950"
+            height="480"
+    />
+    <img
+            src="images/main.webp"
+            alt="Toronto cupcake - Toronto cupcakes"
+            class="w3-padding-16 w3-hide-large"
+            width="300"
+            height="160"
+    />
+    <div class="w3-left-align w3-border w3-round-large">
+        <p></p>
+        <p class="w3-margin">
+            Welcome! Thank you for stopping by Toronto Cupcake. Canada's and the
+            GTA's favourite stop for that special treat. Order cupcakes
+            <a href="cupcakes.html">online</a> 24/7 for your special event.
+            Delivery avaialable most days between 8 and 6pm TO time.
+        </p>
+    </div>
+
+    <div class="w3-left-align w3-light-grey w3-round-large">
+        <p></p>
+        <p class="w3-margin">
+            Celebrating our 11th year of providing Canada's most delicious
+            cupcakes for business meetings, birthdays, weddings, or for no other
+            reason than because.
+        </p>
+        <p class="w3-margin">
+            Our cupcakes are baked daily using the finest ingredients.
+        </p>
+        <p class="w3-margin">
+            Cupcake delivery is available throughout Toronto, the GTA, and beyond.
+            Cupcakes are delivered in our signature pink box.
+        </p>
+    </div>
+</div>
+
+<!--Footer-->
+<hr
+        style="
+        height: 4px;
+        border-width: 0;
+        color: gray;
+        background-color: gray;
+        margin-left: 200px;
+      "
+/>
+<div class="w3-footer custom-footer">
+    <p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cupcakes.html">Cupcakes</a>
+        <a href="CorporateEvents.html">Corp Events</a>
+        <a href="occasions.html">Occasions</a>
+        <a href="givingback.html">Giving Back</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="delivery.html">Cupcake Delivery</a>
+        <a href="EmploymentOpportunities.html">Employment</a>
+    </p>
+</div>
+<!--    </div>-->
+<script>
+    function w3_open() {
+        document.getElementById('TOCCSidenav').style.display = 'block';
+    }
+    function w3_close() {
+        document.getElementById('TOCCSidenav').style.display = 'none';
+    }
+</script>
+<script>
+    function w3_open1() {
+        document.getElementById('content').style.marginLeft = '25%';
+        document.getElementById('TOCCSidenav').style.width = '25%';
+        document.getElementById('TOCCSidenav').style.display = 'block';
+        document.getElementById('openNav').style.display = 'none';
+    }
+    function w3_close1() {
+        document.getElementById('content').style.marginLeft = '0%';
+        document.getElementById('TOCCSidenav').style.display = 'none';
+        document.getElementById('openNav').style.display = 'inline-block';
+    }
+</script>
+<!-- Translate off to figure out webmaster errors  -->
+</body>
+</html>
