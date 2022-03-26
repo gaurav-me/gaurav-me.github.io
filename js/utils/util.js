@@ -23,22 +23,16 @@ const getCombinationPathname = () => {
 
   switch (combination) {
     case '1':
-    case '7':
       return `${basePath}/combination1.html`;
     case '2':
-    case '8':
       return `${basePath}/combination2.html`;
     case '3':
-    case '9':
       return `${basePath}/combination3.html`;
     case '4':
-    case '10':
       return `${basePath}/combination4.html`;
     case '5':
-    case '11':
       return `${basePath}/combination5.html`;
     case '6':
-    case '12':
       return `${basePath}/combination6.html`;
     default:
       return `${basePath}.html`;
@@ -55,76 +49,49 @@ const getSearchParams = () => {
 };
 
 const getIVDetails = (arr) => {
+  const searchParams = getSearchParams();
+  const sidebarLevel = searchParams.get('sidebarLevel');
+  const iv1_level =
+    sidebarLevel === '1'
+      ? 'fixed-sidebar'
+      : sidebarLevel === '2'
+      ? 'floating-sidebar'
+      : '';
+
   switch (arr) {
     case '1':
       return {
-        iv1_level: 'fixed-sidebar',
+        iv1_level,
         iv2_level: 'no-cat-sidebar',
         iv3_level: '6-cupcakes',
       };
     case '2':
       return {
-        iv1_level: 'fixed-sidebar',
+        iv1_level,
         iv2_level: 'no-cat-sidebar',
         iv3_level: '3-cupcakes',
       };
     case '3':
       return {
-        iv1_level: 'fixed-sidebar',
+        iv1_level,
         iv2_level: 'cat-sidebar',
         iv3_level: '6-cupcakes',
       };
     case '4':
       return {
-        iv1_level: 'fixed-sidebar',
+        iv1_level,
         iv2_level: 'cat-sidebar',
         iv3_level: '3-cupcakes',
       };
     case '5':
       return {
-        iv1_level: 'fixed-sidebar',
+        iv1_level,
         iv2_level: 'sub-cat-sidebar',
         iv3_level: '6-cupcakes',
       };
     case '6':
       return {
-        iv1_level: 'fixed-sidebar',
-        iv2_level: 'sub-cat-sidebar',
-        iv3_level: '3-cupcakes',
-      };
-    case '7':
-      return {
-        iv1_level: 'floating-sidebar',
-        iv2_level: 'no-cat-sidebar',
-        iv3_level: '6-cupcakes',
-      };
-    case '8':
-      return {
-        iv1_level: 'floating-sidebar',
-        iv2_level: 'no-cat-sidebar',
-        iv3_level: '3-cupcakes',
-      };
-    case '9':
-      return {
-        iv1_level: 'floating-sidebar',
-        iv2_level: 'cat-sidebar',
-        iv3_level: '6-cupcakes',
-      };
-    case '10':
-      return {
-        iv1_level: 'floating-sidebar',
-        iv2_level: 'cat-sidebar',
-        iv3_level: '3-cupcakes',
-      };
-    case '11':
-      return {
-        iv1_level: 'floating-sidebar',
-        iv2_level: 'sub-cat-sidebar',
-        iv3_level: '6-cupcakes',
-      };
-    case '12':
-      return {
-        iv1_level: 'floating-sidebar',
+        iv1_level,
         iv2_level: 'sub-cat-sidebar',
         iv3_level: '3-cupcakes',
       };
