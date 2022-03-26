@@ -15,7 +15,7 @@
     -->
 
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="canonical" href="https://www.torontocupcake.com/cupcakes.html" />
+    <link rel="canonical" />
     <link href="../css/cupcakes.css" rel="stylesheet">
     <script defer src="js/gtag.js"></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-22531588-1"></script>
@@ -55,14 +55,14 @@
                 if(logNow) {
                     if(!disableScrollLog) {
                         // console.log("startLogged")
-                        loggingjs.logEvent(null, 'scrollStartEvent', {
-                            eventName: 'scrollStart',
-                            info: {
-                                input: searchParams.get('input'),
-                                unique_id: searchParams.get('unique_id'),
-                                interface: 'new',
-                            },
-                        });
+                        // loggingjs.logEvent(null, 'scrollStartEvent', {
+                        //     eventName: 'scrollStart',
+                        //     info: {
+                        //         input: searchParams.get('input'),
+                        //         unique_id: searchParams.get('unique_id'),
+                        //         interface: 'new',
+                        //     },
+                        // });
                     }
                     logNow = false
                 }
@@ -72,14 +72,14 @@
                     logNow = true;
                     // console.log("stopLogged")
                     if(!disableScrollLog) {
-                        loggingjs.logEvent(null, 'scrollStopEvent', {
-                            eventName: 'scrollStop',
-                            info: {
-                                input: searchParams.get('input'),
-                                unique_id: searchParams.get('unique_id'),
-                                interface: 'new',
-                            },
-                        });
+                        // loggingjs.logEvent(null, 'scrollStopEvent', {
+                        //     eventName: 'scrollStop',
+                        //     info: {
+                        //         input: searchParams.get('input'),
+                        //         unique_id: searchParams.get('unique_id'),
+                        //         interface: 'new',
+                        //     },
+                        // });
                     }
                     disableScrollLog = false;
                 }, 500);
@@ -88,32 +88,32 @@
         );
     </script>
 </head>
-<body id="top" class="w3-container w3-TOCCpfont" style="margin-right:3%;margin-left:3%;" onload="logEventUtil('startBrowsing')">
+<body id="top" class="w3-container w3-TOCCpfont" style="margin-right:3%;margin-left:3%;">
 
 <nav class="w3-sidenav w3-theme-l3 w3-TOCCheaderFont w3-card-4 w3-round-large w3-animate-left" style="display:none" id="TOCCSidenav">
     <a href="#"
        onclick="w3_close()"
        class="w3-closenav w3-text-white w3-pink w3-large">MENU<img class="w3-right" src="../images/close.png" alt="Toronto Cupcake logo"></a>
 
-    <a class="w3-text-white w3-round-large" href="index.html">HOME</a>
-    <a class="w3-text-white w3-round-large" href="about.html">ABOUT</a>
-    <a class="w3-text-white w3-round-large" href="CorporateEvents.html">CORPORATE EVENTS</a>
-    <a class="w3-text-white w3-round-large" href="occasions.html">OCCASIONS</a>
+    <a class="w3-text-white w3-round-large">HOME</a>
+    <a class="w3-text-white w3-round-large">ABOUT</a>
+    <a class="w3-text-white w3-round-large">CORPORATE EVENTS</a>
+    <a class="w3-text-white w3-round-large">OCCASIONS</a>
     <div class="w3-dropdown-hover">
         <a class="w3-padding w3-text-white" >CUPCAKES </a>
         <div class="w3-dropdown-content w3-small w3-round-large w3-white w3-card-4">
-            <a onclick="w3_close()" href="cupcakes.html#Always-Available">ALWAYS AVAILABLE</a>
-            <a onclick="w3_close()" href="cupcakes.html#Holidays">HOLIDAYS</a>
-            <a onclick="w3_close()" href="cupcakes.html#Special-Events">SPECIAL EVENTS</a>
-            <a onclick="w3_close()" href="cupcakes.html#Custom">CUSTOM</a>
+            <a onclick="w3_close()" href="combination3.html#Always-Available">ALWAYS AVAILABLE</a>
+            <a onclick="w3_close()" href="combination3.html#Holidays">HOLIDAYS</a>
+            <a onclick="w3_close()" href="combination3.html#Special-Events">SPECIAL EVENTS</a>
+            <a onclick="w3_close()" href="combination3.html#Custom">CUSTOM</a>
         </div>
     </div>
-    <a class="w3-text-white w3-round-large" href="givingback.html">COMMUNITY</a>
-    <a class="w3-text-white w3-round-large" href="faqs.html">FAQs</a>
-    <a class="w3-text-white w3-round-large" href="resources.html">RESOURCES</a>
-    <a class="w3-text-white w3-round-large" href="contact.html">CONNECT</a>
-    <a class="w3-text-white w3-round-large" href="delivery.html">CUPCAKE DELIVERY</a>
-    <a class="w3-text-white w3-round-large" href="cgi-bin/html-cart/html-cart.cgi?display_cart=yes&page=cupcakes.html">VIEW CART</a>
+    <a class="w3-text-white w3-round-large">COMMUNITY</a>
+    <a class="w3-text-white w3-round-large">FAQs</a>
+    <a class="w3-text-white w3-round-large">RESOURCES</a>
+    <a class="w3-text-white w3-round-large">CONNECT</a>
+    <a class="w3-text-white w3-round-large">CUPCAKE DELIVERY</a>
+    <a class="w3-text-white w3-round-large">VIEW CART</a>
 </nav>
 <div class="content-wrapper">
     <nav class="w3-sidenav w3-theme-l3 w3-TOCCheaderFont w3-card-2 w3-animate-right custom-catbar" id="TOCCSidenav">
@@ -142,6 +142,11 @@
                     const d = new Date();
                     document.getElementById("Torontodate").innerHTML = d.toDateString();
                 </script>
+                <script>
+                    window.onload = function() {
+                        window.sessionStorage.setItem('startBrowsing', JSON.stringify(new Date().getTime()))
+                    }
+                </script>
 
                 <!--  Banners in header  -->
                 <!-- Valentine's Day Banner
@@ -154,7 +159,7 @@
                 Mother's Day Banner END -->
                 <!-- Corporate Logo Banner -->
                 <br/>
-                <span class=" w3-animate-right"> Check out our new <a href="CorporateEvents.html">corporate/event logo cupcakes - Click for details </a></span>
+                <span class=" w3-animate-right"> Check out our new <a>corporate/event logo cupcakes - Click for details </a></span>
                 <!-- Corporate Logo Banner END -->
         </header>
         <!-- translate box code  -->
@@ -175,7 +180,6 @@
                 <h4 class="w3-text-pink w3-center w3-TOCCfont">One Dozen One Click</h4>
                 <img src="../images/cupcakes_flavours/assorteddozen.webp" title="One Dozen One Click" alt="Toronto Cupcakes Assorted Dozen cupcakes" class="w3-center w3-margin-right w3-hide-small w3-hide-medium" width="400" height="300" onclick="document.getElementById('Assorted-Dozen').style.display='flex'">
                 <img src="../images/cupcakes_flavours/assorteddozen.webp" title="One Dozen One Click" alt="Toronto Cupcakes Assorted Dozen cupcakes" class="w3-center w3-margin-right w3-hide-large" width="300" height="300" onclick="document.getElementById('Assorted-Dozen').style.display='flex'">
-                <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                     <input type="hidden" name="group" value="Cupcakes">
                     <input type="hidden" name="name" value="Assorted">
                     <input type="hidden" name="price" value="3.75">
@@ -189,7 +193,6 @@
                         <div class="w3-justify">
                             <p>In a panic or can't decide? Need a dozen awesome cupcakes but don't want to pick them out individually?  Read no more just hit the add to cart button and we will pick out 12 delicious treats from our "always available" cupcakes.
                                 <a class="w3-onclick w3-right w3-hide-medium w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a></p>
-                </form>
                 <div id="Assorted-Dozen" class="w3-modal w3-animate-zoom " onclick="this.style.display='none'">
                     <img class="w3-modal-content w3-round-large" src="../images/cupcakes_flavours/assorteddozen.webp">
                 </div>
@@ -203,7 +206,6 @@
             <div class="w3-col w3-center w3-container m6 l2">
                 <hr>
                 <img src="../images/cupcakes_flavours/chocolatepeanutbutter.webp" title="Chocolate Peanut Butter" alt="Toronto Cupcakes Chocolate Peanut Butter cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200" style=" cursor:pointer"  onclick="document.getElementById('Chocolate-Peanut-Butter').style.display='flex'">
-                <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                     <input type="hidden" name="group" value="Cupcakes">
                     <input type="hidden" name="name" value="Chocolate Peanut Butter">
                     <input type="hidden" name="price" value="3.75">
@@ -214,9 +216,7 @@
                     <span class="w3-small">QTY</span>
                     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                    <input onclick="logEventUtil('clickedChocolateAddToCart')" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                </form>
+                    <input onclick="onClickAddToCart(event, 'clickedChocolateAddToCart')" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
             </div>
             <div id="Chocolate-Peanut-Butter" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                 <div class="w3-modal-content w3-quarter w3-round-large">
@@ -234,7 +234,6 @@
             <div class="w3-col w3-center w3-container m6 l2">
                 <hr>
                 <img src="../images/cupcakes_flavours/chocolatehazelnut.webp" title="Chocolate Hazelnut" alt="Toronto Cupcakes Chocolate Hazelnut cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Chocolate-Hazelnut').style.display='flex'">
-                <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                     <input type="hidden" name="group" value="Cupcakes">
                     <input type="hidden" name="name" value="Chocolate Hazelnut">
                     <input type="hidden" name="price" value="3.75">
@@ -245,9 +244,7 @@
                     <span class="w3-small">QTY</span>
                     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                </form>
+                    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
             </div>
             <div id="Chocolate-Hazelnut" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                 <div class="w3-modal-content w3-quarter w3-round-large">
@@ -265,7 +262,6 @@
             <div class="w3-col  w3-center w3-container m6 l2">
                 <hr>
                 <img src="../images/cupcakes_flavours/vanillacoconut.webp" title="Vanilla Coconut" alt="Toronto Cupcakes Vanilla Coconut cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Coconut').style.display='flex'">
-                <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                     <input type="hidden" name="group" value="Cupcakes">
                     <input type="hidden" name="name" value="Vanilla Coconut">
                     <input type="hidden" name="price" value="3.75">
@@ -276,9 +272,8 @@
                     <span class="w3-small">QTY</span>
                     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                </form>
             </div>
             <div id="Vanilla-Coconut" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                 <div class="w3-modal-content w3-quarter w3-round-large">
@@ -296,7 +291,6 @@
             <div class="w3-col w3-center w3-container m6 l2">
                 <hr>
                 <img src="../images/cupcakes_flavours/chocolatecoconut.webp" title="Chocolate Coconut" alt="Toronto Cupcakes Chocolate Coconut cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Chocolate-Coconut').style.display='flex'">
-                <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                     <input type="hidden" name="group" value="Cupcakes">
                     <input type="hidden" name="name" value="Chocolate Coconut">
                     <input type="hidden" name="price" value="3.75">
@@ -305,11 +299,9 @@
                     <input type="hidden" name="control" value="06990d435e77a75460bd9ef50baecd32">
                     <p>Chocolate Coconut</br>cupcake</p>
                     <span class="w3-small">QTY</span>
-                    <input class="w3-round-large" type="text" name="qty" size="2" value="1">
+                    <input onclick="onClickWrongAddToCart(event)"  class="w3-round-large" type="text" name="qty" size="2" value="1">
                     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
                     <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                    <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                </form>
             </div>
             <div id="Chocolate-Coconut" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                 <div class="w3-modal-content w3-quarter w3-round-large">
@@ -327,7 +319,6 @@
             <div class="w3-col w3-center w3-container m6 l2">
                 <hr>
                 <img src="../images/cupcakes_flavours/chocolatechocolate.webp" title="Chocolate Chocolate" alt="Toronto Cupcakes Chocolate Chocolate cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Chocolate-Chocolate').style.display='flex'">
-                <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                     <input type="hidden" name="group" value="Cupcakes">
                     <input type="hidden" name="name" value="Chocolate Chocolate">
                     <input type="hidden" name="price" value="3.75">
@@ -338,9 +329,8 @@
                     <span class="w3-small">QTY</span>
                     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                     <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                </form>
             </div>
             <div id="Chocolate-Chocolate" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                 <div class="w3-modal-content w3-center w3-quarter w3-round-large">
@@ -355,7 +345,6 @@
             <div class="w3-col w3-center w3-container m6 l2">
                 <hr>
                 <img src="../images/cupcakes_flavours/chocolatevanilla.webp" title="Chocolate Vanilla" alt="Toronto Cupcakes Chocolate Vanilla cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Chocolate-Vanilla').style.display='flex'">
-                <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                     <input type="hidden" name="group" value="Cupcakes">
                     <input type="hidden" name="name" value="Chocolate Vanilla">
                     <input type="hidden" name="price" value="3.75">
@@ -366,9 +355,7 @@
                     <span class="w3-small">QTY</span>
                     <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                     <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                    <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                    <a class="w3-onclick w3-right " href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                </form>
+                    <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
             </div>
             <div id="Chocolate-Vanilla" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                 <div class="w3-modal-content w3-quarter w3-round-large">
@@ -389,7 +376,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/redvelvet.webp" title="Red Velvet" alt="Toronto Cupcakes Red Velvet cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Red-Velvet').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Red Velvet">
                         <input type="hidden" name="price" value="3.75">
@@ -400,9 +386,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Red-Velvet" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -417,7 +402,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/vanillavanilla.webp" title="Vanilla Vanilla" alt="Toronto Cupcakes Vanilla Vanilla cupcake" class=" w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Vanilla').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Vanilla Vanilla">
                         <input type="hidden" name="price" value="3.75">
@@ -428,9 +412,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Vanilla-Vanilla" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -445,7 +428,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/vanillachocolate.webp" title="Vanilla Chocolate" alt="Toronto Cupcakes Vanilla Chocolate cupcake" class="w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Vanilla-Chocolate').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Vanilla Chocolate">
                         <input type="hidden" name="price" value="3.75">
@@ -456,9 +438,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Vanilla-Chocolate" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -473,7 +454,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/vanillachocolateganache.webp" title="Vanilla Chocolate Ganache" alt="Toronto Cupcakes Vanilla Chocolate Ganache cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Chocolate-Ganache').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Vanilla Chocolate Ganache">
                         <input type="hidden" name="price" value="3.75">
@@ -483,9 +463,8 @@
                         <p>Vanilla Chocolate</br>Ganche cupcake</p>
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Vanilla-Chocolate-Ganache" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -500,7 +479,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/chocolatecarmel.webp" title="Chocolate Caramel" alt="Toronto Cupcakes Chocolate Caramel cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Chocolate-Caramel').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Chocolate Caramel">
                         <input type="hidden" name="price" value="3.75">
@@ -511,9 +489,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!--    <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Chocolate-Caramel" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content  w3-quarter w3-round-large">
@@ -528,7 +505,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/vanillacarmel.webp" title="Vanilla Caramel" alt="Toronto Cupcakes Vanilla Caramel cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Caramel').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Vanilla Caramel">
                         <input type="hidden" name="price" value="3.75">
@@ -539,9 +515,7 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                        <a class="w3-onclick w3-right" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                 </div>
                 <div id="Vanilla-Caramel" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -560,7 +534,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/chocolatecarmel2.webp" title="Chocolate Caramel II" alt="Toronto Cupcakes Chocolate Caramel II cupcake" class="w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('ChocolateCaramelII').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Chocolate Caramel II">
                         <input type="hidden" name="price" value="3.75">
@@ -570,9 +543,8 @@
                         <p>Chocolate Carmel II</br>cupcake<p>
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="ChocolateCaramelII" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -588,7 +560,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/lemon.webp" title="Lemon" alt="Toronto Cupcakes Lemon cupcake" class="  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Lemon').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Lemon">
                         <input type="hidden" name="price" value="3.75">
@@ -599,9 +570,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Lemon" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -616,7 +586,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/chocolatetoffee.webp" title="Chocolate Toffee" alt="Toronto Cupcakes Chocolate Toffee cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Chocolate-Toffee').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Chocolate Toffee">
                         <input type="hidden" name="price" value="3.75">
@@ -627,9 +596,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Chocolate-Toffee" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -644,7 +612,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/chocolateoreo.webp" title="Chocolate Oreo" alt="Toronto Cupcakes Chocolate Oreo cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200" style="cursor:pointer"  onclick="document.getElementById('Chocolate-Oreo').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Chocolate Oreo">
                         <input type="hidden" name="price" value="3.75">
@@ -655,9 +622,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Chocolate-Oreo" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -673,7 +639,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/hummingbird.webp" title="Humming Bird" alt="Toronto Cupcakes Humming Bird cupcake" class=" w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Humming-Bird').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Humming Bird">
                         <input type="hidden" name="price" value="3.75">
@@ -684,9 +649,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Humming-Bird" class="w3-modal w3-center w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -702,7 +666,6 @@
                 <div class="w3-col w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/ChocolateVanillaChocolateGanache.jpg" title="Chocolate Vanilla Chocolate Ganache" alt="Toronto Cupcakes Chocolate Vanilla Chocolate Ganache cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Chocolate-Vanilla-Chocolate-Ganache').style.display='flex'"><br/><br/>
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Chocolate Vanilla Chocolate Ganache">
                         <input type="hidden" name="price" value="3.75">
@@ -712,9 +675,7 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                        <a class="w3-onclick w3-right" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                 </div>
                 <div id="Chocolate-Vanilla-Chocolate-Ganache" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -735,7 +696,6 @@
                 <div class="w3-col w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/redvelvetfudge.jpg" title="Red Velvet Fudge" alt="Toronto Cupcakes Red Velvet Fudge cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Red-Velvet-Fudge').style.display='flex'"><br/><br/>
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Red Velvet Fudge">
                         <input type="hidden" name="price" value="3.75">
@@ -745,9 +705,7 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                        <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                 </div>
                 <div id="Red-Velvet-Fudge" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -764,7 +722,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/chocolatechocolateganache.webp" title="Chocolate Chocolate  Ganache" alt="Toronto Cupcakes Chocolate Chocolate Ganache cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Chocolate-Chocolate-Ganache').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Chocolate Chocolate Chocolate Ganache">
                         <input type="hidden" name="price" value="3.75">
@@ -774,9 +731,7 @@
                         <p>Chocolate Chocolate</br>Ganache cupcake</p>
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                        <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                 </div>
                 <div id="Chocolate-Chocolate-Ganache" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -792,7 +747,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/hotfudgesundae.webp" title="Hot Fudge Sundae" alt="Toronto Cupcakes Hot Fudge Sundae cupcake" class="w3-margin-right w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Hot-Fudge-Sundae').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Hot Fudge Sundae">
                         <input type="hidden" name="price" value="3.75">
@@ -803,9 +757,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-medium w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Hot-Fudge-Sundae" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-center w3-quarter w3-round-large">
@@ -823,7 +776,6 @@
                 <div class="w3-col w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/ChocolateMocha.jpg" title="Chocolate Mocha" alt="Toronto Cupcakes Chocolate Mocha cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Chocolate-Mocha').style.display='flex'"><br/><br/>
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Chocolate Mocha">
                         <input type="hidden" name="price" value="3.75">
@@ -833,9 +785,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Chocolate-Mocha" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -855,7 +806,6 @@
                 <div class="w3-col w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/RedVelvetRaspberry.jpg" title="Red Velvet Raspberry" alt="Toronto Cupcakes Red Velvet Raspberry cupcake" class="w3-center w3-margin-right w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('redvelvetraspberry').style.display='flex'"><br/><br/>
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Red Velvet Raspberry">
                         <input type="hidden" name="price" value="3.75">
@@ -865,9 +815,8 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input onclick="logEventUtil('clickedRedVelvetAddToCart')"  type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                        <input onclick="onClickAddToCart(event, 'clickedRedVelvetAddToCart')" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                         <a class="w3-onclick w3-right w3-hide-medium w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="redvelvetraspberry" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -887,7 +836,6 @@
                 <div class="w3-col w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/VanillaStrawberry.jpg" title="Vanilla Strawberry" alt="Toronto Cupcakes Vanilla Strawberry cupcake" class="w3-center w3-margin-right w3-round-large w3-hover-shadow " width="150" height="175"  style="cursor:pointer"  onclick="document.getElementById('Vanilla-Strawberry').style.display='flex'"><br><br>
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Cupcakes">
                         <input type="hidden" name="name" value="Vanilla Strawberry">
                         <input type="hidden" name="price" value="3.75">
@@ -897,9 +845,7 @@
                         <span class="w3-small">QTY</span>
                         <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                         <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                        <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
-                        <a class="w3-onclick w3-right" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
+                        <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                 </div>
                 <div id="Vanilla-Strawberry" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -917,9 +863,9 @@
             <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <div class="w3-container w3-small w3-text-pink w3-hide-large">
                 <p>Jump to:
-                    <a class="w3-hide-large w3-text-pink" href="cupcakes.html#Always-Available">ALWAYS AVAILABLE</a>
-                    <a class="w3-hide-large w3-text-pink" href="cupcakes.html#Occasions">OCCASIONS</a>
-                    <a class="w3-hide-large w3-text-pink" href="cupcakes.html#Custom">CUSTOM</a></p>
+                    <a class="w3-hide-large w3-text-pink" href="combination3.html#Always-Available">ALWAYS AVAILABLE</a>
+                    <a class="w3-hide-large w3-text-pink" href="combination3.html#Occasions">OCCASIONS</a>
+                    <a class="w3-hide-large w3-text-pink" href="combination3.html#Custom">CUSTOM</a></p>
             </div>
             <h2 id="Holidays" class="w3-text-pink w3-center w3-TOCCfont">Holidays </h2>
             <p>$3.75 - 5.00 each  <span style="color:#545454;">|</span>  $20.00 - 24.00 half dozen  <span style="color:#545454;">|</span>  $38 - 48 dozen</p>
@@ -963,7 +909,6 @@
                         <hr>
                         <h4 class="w3-text-theme">Valentines Day Dozen</h4>
                         <img src="../images/cupcakes_flavours/toronto_12_valentines.webp" title="Valentines Day Dozen" alt="Toronto Cupcakes Valentines Day Dozen" class="w3-center w3-margin-right" width="300" height="300"><p class="w3-slim">We have designed and packaged a delicious selection of a dozen Valentine's Day Cupcakes including one topped with a heart shaped chocolate truffle. </br></br>Beautifully boxed and decorated these cupcakes come with an enevelope, card, and your personal message.</p>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Speciality Items - Valentines Assorted Doz">
                             <input type="hidden" name="name" value="Valentines Day Dozen">
                             <input type="hidden" name="price" value="45">
@@ -974,15 +919,13 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <input type="hidden" value="Add to Cart" name="order" >
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" value="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" value="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-medium w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div class="w3-col w3-center w3-container m6 l6">
                         <hr>
                         <h4 class="w3-text-theme">Valentines Day Half Dozen</h4>
                         <img src="../images/cupcakes_flavours/toronto_6_valentines.webp" title="Valentines Day Half Dozen" alt="Toronto Cupcakes Valentines Day Half Dozen" class="w3-center w3-margin-right" width="300" height="300"><p class="w3-slim">We have designed and packaged a delicious selection of a half dozen Valentine's Day Cupcakes including one topped with a heart shaped chocolate truffle. </br></br>Beautifully boxed and decorated these cupcakes come with an enevelope, card, and your personal message.</p>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Speciality Items - Valentines Assorted Half Doz">
                             <input type="hidden" name="name" value="Valentines Day Half Dozen">
                             <input type="hidden" name="price" value="23.50">
@@ -993,9 +936,9 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <input type="hidden" value="Add to Cart" name="order" >
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" value="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" value="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-medium w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
+
                     </div>
                 </div>
                 <!-- End of Valentines Day Expanded -->
@@ -1138,7 +1081,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/toronto_12_valentines.webp" title="Valentines Day" alt="Toronto Cupcakes Valentines Day Dozen cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="175" height="175" style="cursor:pointer"  onclick="document.getElementById('Valentines-Day').style.display='flex'"><br/><p>Valentine's Day</p>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Speciality Items - Valentines Assorted Doz">
                             <input type="hidden" name="name" value="Valentines Day Dozen">
                             <input type="hidden" name="price" value="40">
@@ -1148,9 +1090,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="Valentines-Day" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1167,7 +1108,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/Easter.jpg" title="Easter" alt="Toronto Cupcakes Easter cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Easter').style.display='flex'"><br/><br/>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Cupcakes">
                             <input type="hidden" name="name" value="Easter">
                             <input type="hidden" name="price" value="3.75">
@@ -1177,9 +1117,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="Easter" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1196,7 +1135,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/Toronto_Mothers_Day_Dozen.webp" title="Mothers Day" alt="Toronto Cupcakes Mothers Day cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="175" height="175" style="cursor:pointer"  onclick="document.getElementById('Mothers-Day').style.display='flex'"><br/><p>Mothers Day</p>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Speciality Items - Mothers Day Doz">
                             <input type="hidden" name="name" value="Mother's Day Dozen">
                             <input type="hidden" name="price" value="45">
@@ -1206,9 +1144,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <input type="hidden" value="Add to Cart" name="order" title="Add to Cart">
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" value="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4" value="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-medium w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="Mothers-Day" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1225,7 +1162,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/CanadaDay.jpg" title="Canada Day" alt="Toronto Cupcakes Canada Day cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Canada-Day').style.display='flex'"><br/><br/>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Cupcakes">
                             <input type="hidden" name="name" value="Canada Day">
                             <input type="hidden" name="price" value="3.75">
@@ -1235,9 +1171,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="Canada-Day" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1254,7 +1189,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/StPatricksDay.jpg" title="St Patty's Day" alt="Toronto Cupcakes St Patty's Day cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('St-Pattys-Day').style.display='flex'"><br/><br/>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Cupcakes">
                             <input type="hidden" name="name" value="St Patty's Day">
                             <input type="hidden" name="price" value="3.75">
@@ -1264,9 +1198,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="St-Pattys-Day" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1282,7 +1215,7 @@
                 </div>
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
                 <h2 id="Special-Events" class="w3-text-pink w3-center w3-TOCCfont">Special Events and Festivals </h2>
-                If you are looking for information regarding weddings, engagements, or other special occasions visit our <a href="https://www.torontocupcake.com/occasions.html" target="_blank" rel="noopener"> occasions</a> page.
+                If you are looking for information regarding weddings, engagements, or other special occasions visit our <a target="_blank" rel="noopener"> occasions</a> page.
                 <div class="w3-row">
                     <!--
                         <div class="w3-col w3-container m6 l2">
@@ -1317,7 +1250,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/PrideDay.jpg" title="Pride" alt="Toronto Cupcakes Pride cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="175" height="200"                                                                                                                                                                                                                                                                                                                                                                                            style="cursor:pointer"  onclick="document.getElementById('Pride').style.display='flex'"><br/><br/>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Cupcakes">
                             <input type="hidden" name="name" value="Pride">
                             <input type="hidden" name="price" value="3.75">
@@ -1327,9 +1259,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="Pride" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1346,7 +1277,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/jazz.jpg" title="Beaches Jazz" alt="Toronto Cupcakes Beaches Jazz cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="175" height="200" style="cursor:pointer"  onclick="document.getElementById('Beaches-Jazz').style.display='flex'"><br/><br/>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Cupcakes">
                             <input type="hidden" name="name" value="Beaches Jazz">
                             <input type="hidden" name="price" value="3.75">
@@ -1356,9 +1286,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="Beaches-Jazz" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content">
@@ -1375,7 +1304,6 @@
                     <div class="w3-col w3-container m6 l2">
                         <hr>
                         <img src="../images/cupcakes_flavours/Tiff.jpg" title="Toronto International Film Festival" alt="Toronto Cupcakes Toronto International Film Festival cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style="cursor:pointer"  onclick="document.getElementById('Toronto-International-Film-Festival').style.display='flex'"><br/><br/>
-                        <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                             <input type="hidden" name="group" value="Cupcakes">
                             <input type="hidden" name="name" value="Toronto International Film Festival">
                             <input type="hidden" name="price" value="3.75">
@@ -1385,9 +1313,8 @@
                             <span class="w3-small">QTY</span>
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                        </form>
                     </div>
                     <div id="Toronto-International-Film-Festival" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                         <div class="w3-modal-content">
@@ -1408,7 +1335,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/custom1.jpg" title="Custom Cupcakes" alt="Toronto Cupcakes Custom cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200" style="cursor:pointer"  onclick="document.getElementById('Custom-Cupcakes').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Custom Items">
                         <input type="hidden" name="name" value="Custom Cupcakes">
                         <input type="hidden" name="price" value="4.00">
@@ -1419,9 +1345,8 @@
                         <p class="w3-small">QTY
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input onclick="logEventUtil('clickedCustomAddToCart')" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickAddToCart(event, 'clickedCustomAddToCart')" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a>
-                    </form>
                 </div>
                 <div id="Custom-Cupcakes" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1438,7 +1363,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/custom2.webp" title="Just for Kids" alt="Toronto Cupcakes Custom cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Just-for-Kids').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Custom Items">
                         <input type="hidden" name="name" value="Just for Kids">
                         <input type="hidden" name="price" value="4.00">
@@ -1449,9 +1373,8 @@
                         <p class="w3-small">QTY
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)" type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a></p>
-                    </form>
                 </div>
                 <div id="Just-for-Kids" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1469,7 +1392,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/CustomBirthday.jpg" title="Custom Birthday" alt="Toronto Cupcakes Custom cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Custom-Birthday').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Custom Items">
                         <input type="hidden" name="name" value="Custom Birthday">
                         <input type="hidden" name="price" value="4.00">
@@ -1480,9 +1402,8 @@
                         <p class="w3-small">QTY
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)"  type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a></p>
-                    </form>
                 </div>
                 <div id="Custom-Birthday" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1500,7 +1421,6 @@
                 <div class="w3-col w3-center w3-container m6 l2">
                     <hr>
                     <img src="../images/cupcakes_flavours/Face.jpg" title="Portrait" alt="Toronto Cupcakes Custom cupcake" class="w3-center  w3-round-large w3-hover-shadow" width="150" height="200"  style=" cursor:pointer"  onclick="document.getElementById('Portrait').style.display='flex'">
-                    <form method="POST" action="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi">
                         <input type="hidden" name="group" value="Custom Items">
                         <input type="hidden" name="name" value="Portrait">
                         <input type="hidden" name="price" value="4.00">
@@ -1511,9 +1431,8 @@
                         <p class="w3-small">QTY
                             <input class="w3-round-large" type="text" name="qty" size="2" value="1">
                             <!-- <input type="hidden" value="Add to Cart" name="order" >  -->
-                            <input type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
+                            <input onclick="onClickWrongAddToCart(event)"  type="image" src="../images/small.png" width="110"  height="30" class="w3-btn w3-small w3-round-xxlarge w3-border w3-theme-l4"  alt="Add to Cart" name="order">
                             <a class="w3-onclick w3-right w3-hide-large" href="#top"><i class="icon-up-arrow" title="TOP" style="font-size:24px"></i></a></p>
-                    </form>
                 </div>
                 <div id="Portrait" class="w3-modal w3-transparent" onclick="this.style.display='none'">
                     <div class="w3-modal-content w3-quarter w3-round-large">
@@ -1533,17 +1452,17 @@
             <hr style="height:4px;border-width:0;color:gray;background-color:gray">
             <div class="w3-footer">
                 <p>
-                    <a class="w3-padding-small" href="index.html">Home</a>
-                    <a class="w3-padding-small" href="about.html">About</a>
-                    <a class="w3-padding-small" href="cupcakes.html">Cupcakes</a>
-                    <a class="w3-padding-small" href="CorporateEvents.html">Corp Events</a>
-                    <a class="w3-padding-small" href="occasions.html">Occasions</a>
-                    <a class="w3-padding-small" href="givingback.html">Giving Back</a>
-                    <a class="w3-padding-small" href="faqs.html">FAQs</a>
-                    <a class="w3-padding-small" href="resources.html">Resources</a>
-                    <a class="w3-padding-small" href="contact.html">Contact Us</a>
-                    <a class="w3-padding-small" href="delivery.html">Cupcake Delivery</a>
-                    <a class="w3-padding-small" href="EmploymentOpportunities.html">Employment</a></p>
+                    <a class="w3-padding-small">Home</a>
+                    <a class="w3-padding-small">About</a>
+                    <a class="w3-padding-small">Cupcakes</a>
+                    <a class="w3-padding-small">Corp Events</a>
+                    <a class="w3-padding-small">Occasions</a>
+                    <a class="w3-padding-small">Giving Back</a>
+                    <a class="w3-padding-small">FAQs</a>
+                    <a class="w3-padding-small">Resources</a>
+                    <a class="w3-padding-small">Contact Us</a>
+                    <a class="w3-padding-small">Cupcake Delivery</a>
+                    <a class="w3-padding-small">Employment</a></p>
             </div>
             <p style="color: #ffffee" > <h2 style="color: #ffffee">Toronto cupcakes</h2> <p style="color: #ffffee" >now deliver cupcakes throughout the GTA and beyond.  <h2 style="color: #ffffee"> Cupcakes are delivered to Toronto and the GTA</h2><p style="color: #ffffee" >, Markham, Scarborough, Etobicoke, Mississauga, Barrie, New Market, Brampton, Caledon, Oakville, Burlington, Hamilton, Milton, Richmond Hill, Aurora, Whitby, Pickering, Vaughan and other locations around the GTA.
             The Toronto Cupcake bakery, is most famous for its delicious gourmet cupcakes. <h2 style="color: #ffffee">Toronto Cupcake </h2> <p style="color: #ffffee" >cupcakes are the perfect gift for any special occasion including birthdays, weddings, graduations, anniversaries, and corporate events.
