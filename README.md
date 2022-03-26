@@ -19,9 +19,19 @@
 | 7   | Red velvet raspberry button onclick | Click on custom cupcake Add To Cart Button                             | clickedRedVelvetAddToCart |
 | 8   | Custom cupcake button onclick       | Click on custom cupcake Add To Cart Button, also the journey end event | clickedCustomAddToCart    |
 
+
+## IVs
+- Sidebar homepage (floating / fixed)
+- Category sidebar (not present / category options / sub-category options)
+- Cupcakes per row (6/3)
+
+## DVs to be logged
+- Total time on homepage
+- Total time browsing
+
 ## Combination mapping
 
-| Argmnt No. | Condition         |
+| Cbtn No.   | Condition         |
 | :--------- | :---------------- |
 | 1          | No sidebar, 6 CPR, Fixed homepage sidebar |
 | 2          | No sidebar, 3 CPR, Fixed homepage sidebar  |
@@ -39,7 +49,7 @@
 ## Sample pathname
 
 ```
-/cupcakes/combination6?uid=1234&trial_id=4321&combination=6
+/cupcakes/combination6?unique_id=1234&trial_id=2&combination=6
 ```
 Landing page: 
 ```

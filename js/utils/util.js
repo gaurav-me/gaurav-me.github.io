@@ -5,7 +5,7 @@ const logEventUtil = (eventName, additionalInfoObj) => {
 
   loggingjs.logEvent(null, eventName, {
     eventName: eventName,
-    // {unique_id, trial_id, iv1_level, iv2_level, iv3_level, DV2, DV3}
+    // Response that needs to be logged: {unique_id, trial_id, iv1_level, iv2_level, iv3_level, DV2, DV3}
     info: {
       trial_id: searchParams.get('trial_id'),
       unique_id: searchParams.get('unique_id'),
