@@ -46,14 +46,14 @@
         if(logNow) {
             if(!disableScrollLog) {
                 // console.log("startLogged")
-                loggingjs.logEvent(null, 'scrollStartEvent', {
-                    eventName: 'scrollStart',
-                    info: {
-                        input: searchParams.get('input'),
-                        unique_id: searchParams.get('unique_id'),
-                        interface: 'new',
-                        },
-                });
+                // loggingjs.logEvent(null, 'scrollStartEvent', {
+                //     eventName: 'scrollStart',
+                //     info: {
+                //         input: searchParams.get('input'),
+                //         unique_id: searchParams.get('unique_id'),
+                //         interface: 'new',
+                //         },
+                // });
             }
             logNow = false
         }
@@ -63,14 +63,14 @@
             logNow = true;
             // console.log("stopLogged")
             if(!disableScrollLog) {
-                loggingjs.logEvent(null, 'scrollStopEvent', {
-                    eventName: 'scrollStop',
-                    info: {
-                    input: searchParams.get('input'),
-                    unique_id: searchParams.get('unique_id'),
-                    interface: 'new',
-                    },
-                });
+                // loggingjs.logEvent(null, 'scrollStopEvent', {
+                //     eventName: 'scrollStop',
+                //     info: {
+                //     input: searchParams.get('input'),
+                //     unique_id: searchParams.get('unique_id'),
+                //     interface: 'new',
+                //     },
+                // });
             }
             disableScrollLog = false;
         }, 500);
